@@ -1,0 +1,25 @@
+header {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 1;
+    height: 10vh;
+}
+.navbar h1,.navbar span {
+    color: var(--black);
+    margin: 0 2vw;
+    font-size: 4vh;
+    cursor: pointer;
+}
+.navbar h1:hover {
+    color: var(--main);
+}
+
+.logo img {
+    cursor: pointer;
+    height: 7vh;
+    filter: invert(var(--invert));
+}

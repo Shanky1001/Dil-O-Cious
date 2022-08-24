@@ -1,0 +1,50 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(100%);
+    padding: 3vw;
+    border-radius: 50%;
+}
+
+#testimonials {
+    padding: 3% 0;
+    color: var(--black);
+    background-color: var(--bg);
+}
+
+#testimonials h1 {
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#carouselTestimonial {
+    padding-top: 3%;
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+    min-height: 70vh;
+}
+
+#testimonialSlider {
+    width: 90%;
+    margin: auto;
+}
+
+.cardContainer {
+    width: 90%;
+    min-height: 65vh;
+    margin: auto;
+    border: 1px solid salmon;
+}
+
+.slick-next:before,
+.slick-prev::before {
+    font-size: 8vh;
+    cursor: pointer;
+    color: var(--black);
+}
+.slick-next{
+    right: 1%;
+}
+.slick-prev {
+    left: -2%;
+}
