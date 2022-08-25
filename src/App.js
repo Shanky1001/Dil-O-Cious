@@ -2,6 +2,7 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
+import AboutPage from './Components/AboutPage';
 import Cart from './Components/Cart';
 import Checkout from './Components/Checkout';
 import Main from './Components/Main';
@@ -23,6 +24,7 @@ function App() {
           <NavBar />
           <Routes>
             <Route path='/' exact element={<Main />} />
+            <Route path='/about' element={<AboutPage />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/menu' element={<Menu />} />
             <Route path='/product/:ID' element={<Product />} />

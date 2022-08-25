@@ -1,25 +1,143 @@
-header {
-    width: 90%;
-    margin: auto;
+#navContainer {
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    position: sticky;
-    z-index: 1;
-    height: 10vh;
-}
-.navbar h1,.navbar span {
-    color: var(--black);
-    margin: 0 2vw;
-    font-size: 4vh;
-    cursor: pointer;
-}
-.navbar h1:hover {
-    color: var(--main);
+    justify-content: space-between;
 }
 
 .logo img {
-    cursor: pointer;
-    height: 7vh;
+    width: 200px;
     filter: invert(var(--invert));
+}
+
+.header .navbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header .navbar h1 {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 3rem;
+    color: var(--black);
+}
+
+.header .navbar h1:hover {
+    color: var(--main);
+}
+
+.options {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.options h1 {
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.options h1:hover {
+    color: var(--main);
+}
+
+.navbarMob {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white);
+    transition: 1s ease;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay h1 {
+    cursor: pointer;
+    color: var(--black);
+    margin: 1rem 2rem;
+    font-size: 2rem;
+}
+
+.navbarMob .fa-xmark {
+    font-size: 2rem;
+    color: var(--black);
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.navbarMob .fa-bars {
+    color: var(--black);
+    font-size: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:2000px) {
+    .logo img {
+        width: 220px;
+        filter: invert(var(--invert));
+    }
+}
+
+
+@media screen and (max-width:1150px) {
+
+    .header .navbar {
+        display: none;
+    }
+
+    .header .navbarMob {
+        display: flex;
+    }
+
+    .header .navbarMob .optionsM {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .options {
+        display: none;
+    }
+
+    .navbar {
+        padding: 1rem;
+    }
+
+    .logo img {
+        width: 140px;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    .header .navbarMob .optionsM {
+        display: flex;
+
+    }
 }
