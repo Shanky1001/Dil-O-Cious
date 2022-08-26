@@ -22,7 +22,7 @@ const NavBar = () => {
                 <nav className='navbar'>
                     <Link to="/"><h1>Home</h1></Link>
                     <Link to="/about"><h1>About</h1></Link>
-                    <Link to="/menu"><h1>Menu</h1></Link>
+                    <Link to="/menu"><h1>Our Menu</h1></Link>
                     <Link to="/"><h1>Contact</h1></Link>
                 </nav>
                 <div className='options'>

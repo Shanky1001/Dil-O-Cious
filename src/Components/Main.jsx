@@ -5,6 +5,8 @@ import Slider from "react-slick";
 import testimonial from '../Assests/Testimonials.json';
 import Card from './Card';
 import About from './About';
+import TopPicks from './TopPicks';
+import Category from './Category';
 
 
 
@@ -15,8 +17,8 @@ const Main = () => {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 1500,
-    speed: 500,
+    autoplaySpeed: 2500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 1,
@@ -43,7 +45,7 @@ const Main = () => {
   const settings1 = {
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 5000,
     arrows: true,
     cssEase: "linear",
     infinite: true,
@@ -81,25 +83,33 @@ const Main = () => {
 
       {/* Carousel Container Ends */}
 
+
+      {/* Top Picks  and Category Starts */}
+
+      <Category />
+      <TopPicks />
+
+      {/* Top Picks and Category Ends  */}
+
       {/* Testimonials Starts */}
 
       <div id="testimonials">
         <h1> CUSTOMER'S SPEAK </h1>
         <div id='testimonialSlider'>
           <Slider {...settings}>
-            <div style={{width:"100%",height:"80%"}}>
+            <div style={{ width: "100%", height: "80%" }}>
               <Card val={testimonial[0]} />
             </div>
-            <div style={{width:"100%",height:"80%"}}>
+            <div style={{ width: "100%", height: "80%" }}>
               <Card val={testimonial[1]} />
             </div>
-            <div style={{width:"100%",height:"80%"}}>
+            <div style={{ width: "100%", height: "80%" }}>
               <Card val={testimonial[2]} />
             </div>
-            <div style={{width:"100%",height:"80%"}}>
+            <div style={{ width: "100%", height: "80%" }}>
               <Card val={testimonial[3]} />
             </div>
-            <div style={{width:"100%",height:"80%"}}>
+            <div style={{ width: "100%", height: "80%" }}>
               <Card val={testimonial[4]} />
             </div>
           </Slider>
