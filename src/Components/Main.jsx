@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect } from 'react';
 import '../App.css'
 import '../Components/Components Styles/Main.css';
 import Slider from "react-slick";
@@ -8,10 +8,12 @@ import About from './About';
 import TopPicks from './TopPicks';
 import Category from './Category';
 
+import { user } from '../App';
 
 
 const Main = () => {
 
+  var { cart, setCart, cartSize, setCartSize, discount, setDiscount, totalPrice, setTotalPrice } = useContext(user);
   const settings = {
     dots: true,
     arrows: false,
@@ -53,7 +55,11 @@ const Main = () => {
     slidesToScroll: 1,
     initialSlide: 0,
   }
+  useEffect(() => {
+    console.log(cart);
+  }, [cart]);
 
+  
   return (
     <div id="mainContainer">
 

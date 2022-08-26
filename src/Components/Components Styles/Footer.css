@@ -67,7 +67,7 @@
 }
 #backToTop{
     position: fixed;
-    bottom: 80%;
+    bottom: 50%;
     right: 1%;
     color: var(--white);
     z-index: 10000;
