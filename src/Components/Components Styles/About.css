@@ -7,6 +7,7 @@
     justify-content: center;
     flex-direction: column;
     color: var(--black);
+    background-color: var(--bColor);
 }
 
 #aboutContainer>h1{

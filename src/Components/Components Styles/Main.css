@@ -1,3 +1,7 @@
+#mainContainer{
+    padding-top: 12vh;
+}
+
 #carouselMain div img {
     position: relative;
     width: 100% !important;

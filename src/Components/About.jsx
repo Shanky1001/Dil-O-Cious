@@ -21,6 +21,7 @@ const About = () => {
                 <Link to={'/about'}><button>Know More</button> </Link>
             </div>
             </div>
+            
         </div>
     )
 }

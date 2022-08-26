@@ -5,6 +5,7 @@ import './App.css';
 import AboutPage from './Components/AboutPage';
 import Cart from './Components/Cart';
 import Checkout from './Components/Checkout';
+import Footer from './Components/Footer';
 import Main from './Components/Main';
 import Menu from './Components/Menu';
 import NavBar from './Components/NavBar';
@@ -30,6 +31,7 @@ function App() {
             <Route path='/product/:ID' element={<Product />} />
             <Route path='/checkout' element={<Checkout />} />
           </Routes>
+          <Footer />
         </Router>
       </div>
     </>

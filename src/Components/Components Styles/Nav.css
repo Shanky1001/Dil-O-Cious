@@ -1,5 +1,8 @@
 #navContainer {
     width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: var(--white);
 }
 
 .header {
@@ -42,7 +45,7 @@
 
 .options h1 {
     cursor: pointer;
-    font-size: 3.5vh;
+    font-size: 4.5vh;
     font-weight: 600;
     color: var(--black);
     margin: 0 1rem;
@@ -75,11 +78,11 @@
     cursor: pointer;
     color: var(--black);
     margin: 1rem 2rem;
-    font-size: 2rem;
+    font-size: 4.5vh;
 }
 
 .navbarMob .fa-xmark {
-    font-size: 2rem;
+    font-size: 4.5vh;
     color: var(--black);
     position: absolute;
     top: 13px;
@@ -89,7 +92,7 @@
 
 .navbarMob .fa-bars {
     color: var(--black);
-    font-size: 25px;
+    font-size: 4.5vh;
     font-weight: 600;
     cursor: pointer;
 }
