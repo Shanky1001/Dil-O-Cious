@@ -53,7 +53,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 478
   },
   {
     "idMeal": "52768",
@@ -109,7 +109,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 345
   },
   {
     "idMeal": "52893",
@@ -165,11 +165,11 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 347
   },
   {
     "idMeal": "52994",
-    "strMeal": "Skillet Apple Pork Chops with Roasted Sweet Potatoes & Zucchini",
+    "strMeal": "Skillet Apple Pork Chops",
     "strDrinkAlternate": null,
     "strCategory": "Pork",
     "strArea": "American",
@@ -221,7 +221,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 475
   },
   {
     "idMeal": "52855",
@@ -277,7 +277,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 359
   },
   {
     "idMeal": "52894",
@@ -333,7 +333,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 469
   },
   {
     "idMeal": "52928",
@@ -389,7 +389,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 489
   },
   {
     "idMeal": "52891",
@@ -445,7 +445,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 475
   },
   {
     "idMeal": "52924",
@@ -501,7 +501,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 364
   },
   {
     "idMeal": "52858",
@@ -557,7 +557,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 468
   },
   {
     "idMeal": "52854",
@@ -613,10 +613,10 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 457
   },
   {
-    "idMeal": "52855",
+    "idMeal": "52885",
     "strMeal": "Banana Pancakes",
     "strDrinkAlternate": null,
     "strCategory": "Dessert",
@@ -669,11 +669,11 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 623
   },
   {
     "idMeal": "53022",
-    "strMeal": "Polskie Nale\u015bniki (Polish Pancakes)",
+    "strMeal": "Polskie Nalesniki (Polish Pancakes)",
     "strDrinkAlternate": null,
     "strCategory": "Dessert",
     "strArea": "Polish",
@@ -725,7 +725,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 642
   },
   {
     "idMeal": "52902",
@@ -781,7 +781,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 347
   },
   {
     "idMeal": "52862",
@@ -837,7 +837,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 356
   },
   {
     "idMeal": "52861",
@@ -893,7 +893,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 138
   },
   {
     "idMeal": "52958",
@@ -949,7 +949,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 543
   },
   {
     "idMeal": "52916",
@@ -1005,63 +1005,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
-  },
-  {
-    "idMeal": "53022",
-    "strMeal": "Polskie Nale\u015bniki (Polish Pancakes)",
-    "strDrinkAlternate": null,
-    "strCategory": "Dessert",
-    "strArea": "Polish",
-    "strInstructions": "Add flour, eggs, milk, water, and salt in a large bowl then mix with a hand mixer until you have a smooth, lump-free batter.\r\nAt this point, mix in the butter or the vegetable oil. Alternatively, you can use them to grease the pan before frying each pancake.\r\nHeat a non-stick pan over medium heat, then pour in the batter, swirling the pan to help it spread.\r\nWhen the pancake starts pulling away a bit from the sides, and the top is no longer wet, flip it and cook shortly on the other side as well.\r\nTransfer to a plate. Cook the remaining batter until all used up.\r\nServe warm, with the filling of your choice.",
-    "strMealThumb": "https://www.themealdb.com/images/media/meals/58bkyo1593350017.jpg",
-    "strTags": null,
-    "strYoutube": "https://www.youtube.com/watch?v=EZS4ev2crHc",
-    "strIngredient1": "Flour",
-    "strIngredient2": "Eggs",
-    "strIngredient3": "Milk",
-    "strIngredient4": "Water",
-    "strIngredient5": "Salt",
-    "strIngredient6": "Sugar",
-    "strIngredient7": "Butter",
-    "strIngredient8": "",
-    "strIngredient9": "",
-    "strIngredient10": "",
-    "strIngredient11": "",
-    "strIngredient12": "",
-    "strIngredient13": "",
-    "strIngredient14": "",
-    "strIngredient15": "",
-    "strIngredient16": "",
-    "strIngredient17": "",
-    "strIngredient18": "",
-    "strIngredient19": "",
-    "strIngredient20": "",
-    "strMeasure1": "1 cup ",
-    "strMeasure2": "2",
-    "strMeasure3": "1 cup ",
-    "strMeasure4": "3/4 cup ",
-    "strMeasure5": "Pinch",
-    "strMeasure6": "1 tsp ",
-    "strMeasure7": "3 tbs",
-    "strMeasure8": " ",
-    "strMeasure9": " ",
-    "strMeasure10": " ",
-    "strMeasure11": " ",
-    "strMeasure12": " ",
-    "strMeasure13": " ",
-    "strMeasure14": " ",
-    "strMeasure15": " ",
-    "strMeasure16": " ",
-    "strMeasure17": " ",
-    "strMeasure18": " ",
-    "strMeasure19": " ",
-    "strMeasure20": " ",
-    "strSource": "https://www.tasteatlas.com/nalesniki/recipe",
-    "strImageSource": null,
-    "strCreativeCommonsConfirmed": null,
-    "dateModified": null,
-    "price": 350
+    "price": 465
   },
   {
     "idMeal": "53046",
@@ -1117,7 +1061,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 460
   },
   {
     "idMeal": "52932",
@@ -1173,7 +1117,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 550
   },
   {
     "idMeal": "52857",
@@ -1229,7 +1173,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 250
   },
   {
     "idMeal": "52901",
@@ -1285,7 +1229,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 364
   },
   {
     "idMeal": "52786",
@@ -1341,7 +1285,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 378
   },
   {
     "idMeal": "53024",
@@ -1453,7 +1397,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 386
   },
   {
     "idMeal": "53054",
@@ -1509,7 +1453,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 499
   },
   {
     "idMeal": "52886",
@@ -1565,63 +1509,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
-  },
-  {
-    "idMeal": "52883",
-    "strMeal": "Sticky Toffee Pudding",
-    "strDrinkAlternate": null,
-    "strCategory": "Dessert",
-    "strArea": "British",
-    "strInstructions": "Preheat the oven to 180C/160C Fan/Gas 4. Butter a wide shallow 1.7-litre/3-pint ovenproof dish.\r\nPut the butter, sugar, eggs, flour, baking powder, bicarbonate of soda and treacle into a mixing bowl. Beat using an electric handheld whisk for about 30 seconds or until combined. Pour in the milk gradually and whisk again until smooth. Pour into the prepared dish. Bake for 35\u201340 minutes or until well risen and springy in the centre.\r\nTo make the sauce, put all the ingredients into a saucepan and stir over a low heat until the sugar has dissolved and the butter has melted. Bring to the boil, stirring for a minute.\r\nTo serve, pour half the sauce over the pudding in the baking dish. Serve with the cream or ice cream.",
-    "strMealThumb": "https://www.themealdb.com/images/media/meals/xqqqtu1511637379.jpg",
-    "strTags": "Pudding,Cake,Desert",
-    "strYoutube": "https://www.youtube.com/watch?v=Wytv3bjqJII",
-    "strIngredient1": "Butter",
-    "strIngredient2": "Muscovado Sugar",
-    "strIngredient3": "Eggs",
-    "strIngredient4": "Self-raising Flour",
-    "strIngredient5": "Baking Powder",
-    "strIngredient6": "Bicarbonate Of Soda",
-    "strIngredient7": "Black Treacle",
-    "strIngredient8": "Milk",
-    "strIngredient9": "Double Cream",
-    "strIngredient10": "Butter",
-    "strIngredient11": "Muscovado Sugar",
-    "strIngredient12": "Black Treacle",
-    "strIngredient13": "Double Cream",
-    "strIngredient14": "Vanilla Extract",
-    "strIngredient15": "",
-    "strIngredient16": "",
-    "strIngredient17": "",
-    "strIngredient18": "",
-    "strIngredient19": "",
-    "strIngredient20": "",
-    "strMeasure1": "100g ",
-    "strMeasure2": "175g",
-    "strMeasure3": "2 large",
-    "strMeasure4": "225g",
-    "strMeasure5": "1 tsp ",
-    "strMeasure6": "1 tsp ",
-    "strMeasure7": "3 tbs",
-    "strMeasure8": "275ml",
-    "strMeasure9": "to serve",
-    "strMeasure10": "100g ",
-    "strMeasure11": "125g",
-    "strMeasure12": "1 tbs",
-    "strMeasure13": "300ml ",
-    "strMeasure14": "1 tsp ",
-    "strMeasure15": "",
-    "strMeasure16": "",
-    "strMeasure17": "",
-    "strMeasure18": "",
-    "strMeasure19": "",
-    "strMeasure20": "",
-    "strSource": "https://www.bbc.co.uk/food/recipes/marys_sticky_toffee_41970",
-    "strImageSource": null,
-    "strCreativeCommonsConfirmed": null,
-    "dateModified": null,
-    "price": 350
+    "price": 389
   },
   {
     "idMeal": "52793",
@@ -1677,63 +1565,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
-  },
-  {
-    "idMeal": "52793",
-    "strMeal": "Sticky Toffee Pudding Ultimate",
-    "strDrinkAlternate": null,
-    "strCategory": "Dessert",
-    "strArea": "British",
-    "strInstructions": "Stone and chop the dates quite small, put them in a bowl, then pour the boiling water over. Leave for about 30 mins until cool and well-soaked, then mash a bit with a fork. Stir in the vanilla extract. Butter and flour seven mini pudding tins (each about 200ml/7fl oz) and sit them on a baking sheet. Heat oven to 180C/fan 160C/gas 4.\r\nWhile the dates are soaking, make the puddings. Mix the flour and bicarbonate of soda together and beat the eggs in a separate bowl. Beat the butter and sugar together in a large bowl for a few mins until slightly creamy (the mixture will be grainy from the sugar). Add the eggs a little at a time, beating well between additions. Beat in the black treacle then, using a large metal spoon, gently fold in one-third of the flour, then half the milk, being careful not to overbeat. Repeat until all the flour and milk is used. Stir the soaked dates into the pudding batter. The mix may look a little curdled at this point and will be like a soft, thick batter. Spoon it evenly between the tins and bake for 20-25 mins, until risen and firm.\r\nMeanwhile, put the sugar and butter for the sauce in a medium saucepan with half the cream. Bring to the boil over a medium heat, stirring all the time, until the sugar has completely dissolved. Stir in the black treacle, turn up the heat slightly and let the mixture bubble away for 2-3 mins until it is a rich toffee colour, stirring occasionally to make sure it doesn\u2019t burn. Take the pan off the heat and beat in the rest of the cream.\r\nRemove the puddings from the oven. Leave in the tins for a few mins, then loosen them well from the sides of the tins with a small palette knife before turning them out. You can serve them now with the sauce drizzled over, but they\u2019ll be even stickier if left for a day or two coated in the sauce. To do this, pour about half the sauce into one or two ovenproof serving dishes. Sit the upturned puddings on the sauce, then pour the rest of the sauce over them. Cover with a loose tent of foil so that the sauce doesn\u2019t smudge (no need to chill).\r\nWhen ready to serve, heat oven to 180C/fan 160C/gas 4. Warm the puddings through, still covered, for 15-20 mins or until the sauce is bubbling. Serve them on their own, or with cream or custard.",
-    "strMealThumb": "https://www.themealdb.com/images/media/meals/xrptpq1483909204.jpg",
-    "strTags": "Pudding,Desert,Cake,Dairy",
-    "strYoutube": "https://www.youtube.com/watch?v=hKq6RbxJHBo",
-    "strIngredient1": "Medjool dates",
-    "strIngredient2": "water",
-    "strIngredient3": "vanilla extract",
-    "strIngredient4": "self-raising flour",
-    "strIngredient5": "bicarbonate of soda",
-    "strIngredient6": "eggs",
-    "strIngredient7": "butter",
-    "strIngredient8": "demerara sugar",
-    "strIngredient9": "black treacle",
-    "strIngredient10": "milk",
-    "strIngredient11": "ice cream",
-    "strIngredient12": "muscovado sugar",
-    "strIngredient13": "butter",
-    "strIngredient14": "double cream",
-    "strIngredient15": "black treacle",
-    "strIngredient16": "",
-    "strIngredient17": "",
-    "strIngredient18": "",
-    "strIngredient19": "",
-    "strIngredient20": "",
-    "strMeasure1": "225g",
-    "strMeasure2": "175ml Boiling",
-    "strMeasure3": "1 tsp",
-    "strMeasure4": "175g",
-    "strMeasure5": "1 tsp",
-    "strMeasure6": "2",
-    "strMeasure7": "85g",
-    "strMeasure8": "140g",
-    "strMeasure9": "2 tbsp",
-    "strMeasure10": "100ml",
-    "strMeasure11": "1 scoop",
-    "strMeasure12": "175g",
-    "strMeasure13": "50g",
-    "strMeasure14": "225ml",
-    "strMeasure15": "1 tbsp",
-    "strMeasure16": "",
-    "strMeasure17": "",
-    "strMeasure18": "",
-    "strMeasure19": "",
-    "strMeasure20": "",
-    "strSource": "https://www.youtube.com/watch?v=Wytv3bjqJII",
-    "strImageSource": null,
-    "strCreativeCommonsConfirmed": null,
-    "dateModified": null,
-    "price": 350
+    "price": 363
   },
   {
     "idMeal": "53005",
@@ -1789,7 +1621,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 371
   },
   {
     "idMeal": "52931",
@@ -1845,7 +1677,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 385
   },
   {
     "idMeal": "52889",
@@ -1901,7 +1733,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 364
   },
   {
     "idMeal": "52909",
@@ -1957,63 +1789,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
-  },
-  {
-    "idMeal": "52916",
-    "strMeal": "Pear Tarte Tatin",
-    "strDrinkAlternate": null,
-    "strCategory": "Dessert",
-    "strArea": "French",
-    "strInstructions": "Core the pears, then peel as neatly as possible and halve. If you like, they can be prepared up to a day ahead and kept in the fridge, uncovered, so that they dry out.\r\nTip the sugar, butter, star anise, cardamom and cinnamon into an ovenproof frying pan, about 20cm wide, and place over a high heat until bubbling. Shake the pan and stir the buttery sauce until it separates and the sugar caramelises to a toffee colour.\r\nLay the pears in the pan, then cook in the sauce for 10-12 mins, tossing occasionally, until completely caramelised. Don\u2019t worry about them burning \u2013 they won\u2019t \u2013 but you want to caramelise them as much as possible. Splash in the brandy and let it flamb\u00e9, then set the pears aside.\r\nHeat oven to 200C/fan 180C/gas 6. Roll the pastry out to the thickness of a \u00a31 coin. Using a plate slightly larger than the top of the pan, cut out a circle, then press the edges of the circle of pastry to thin them out.\r\nWhen the pears have cooled slightly, arrange them in the pan, cut side up, in a floral shape, with the pears around the edge pointing inwards. Rest the cinnamon stick on the top in the centre, with the cardamom pods scattered around.\r\nDrape the pastry over the pears, then tuck the edges down the pan sides and under the fruit (see Gordon\u2019s guide). Pierce the pastry a few times, then bake for 15 mins. If a lot of juice bubbles up the side of the pan, pour it off at this stage (see guide). Reduce oven to 180C/fan 160C/gas 4 and bake for 15 mins more until the pastry is golden. Leave the tart to stand for 10 mins, then invert it carefully onto a serving dish.",
-    "strMealThumb": "https://www.themealdb.com/images/media/meals/rxvxrr1511797671.jpg",
-    "strTags": "Tart,Glazed,Baking",
-    "strYoutube": "https://www.youtube.com/watch?v=8U1tKWKDeWA",
-    "strIngredient1": "Pears",
-    "strIngredient2": "Caster Sugar",
-    "strIngredient3": "Butter",
-    "strIngredient4": "Star Anise",
-    "strIngredient5": "Cardamom",
-    "strIngredient6": "Cinnamon",
-    "strIngredient7": "Brandy",
-    "strIngredient8": "Puff Pastry",
-    "strIngredient9": "",
-    "strIngredient10": "",
-    "strIngredient11": "",
-    "strIngredient12": "",
-    "strIngredient13": "",
-    "strIngredient14": "",
-    "strIngredient15": "",
-    "strIngredient16": "",
-    "strIngredient17": "",
-    "strIngredient18": "",
-    "strIngredient19": "",
-    "strIngredient20": "",
-    "strMeasure1": "8",
-    "strMeasure2": "100g ",
-    "strMeasure3": "100g ",
-    "strMeasure4": "2",
-    "strMeasure5": "3 Pods",
-    "strMeasure6": "1 large",
-    "strMeasure7": "2 tbs",
-    "strMeasure8": "500g",
-    "strMeasure9": "",
-    "strMeasure10": "",
-    "strMeasure11": "",
-    "strMeasure12": "",
-    "strMeasure13": "",
-    "strMeasure14": "",
-    "strMeasure15": "",
-    "strMeasure16": "",
-    "strMeasure17": "",
-    "strMeasure18": "",
-    "strMeasure19": "",
-    "strMeasure20": "",
-    "strSource": "https://www.bbcgoodfood.com/recipes/4778/pear-tarte-tatin",
-    "strImageSource": null,
-    "strCreativeCommonsConfirmed": null,
-    "dateModified": null,
-    "price": 350
+    "price": 353
   },
   {
     "idMeal": "52929",
@@ -2069,7 +1845,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 550
   },
   {
     "idMeal": "52892",
@@ -2125,7 +1901,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 450
   },
   {
     "idMeal": "52970",
@@ -2181,7 +1957,7 @@
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
     "dateModified": null,
-    "price": 350
+    "price": 370
   },
   {
     "idMeal": "53062",
@@ -2236,7 +2012,8 @@
     "strSource": "https://www.visit-croatia.co.uk/croatian-cuisine/croatian-recipes/",
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
-    "dateModified": null
+    "dateModified": null,
+    "price":400
   },
   {
     "idMeal": "52917",
@@ -2291,6 +2068,7 @@
     "strSource": "https://www.bbcgoodfood.com/recipes/2540/white-chocolate-crme-brle",
     "strImageSource": null,
     "strCreativeCommonsConfirmed": null,
-    "dateModified": null
+    "dateModified": null,
+    "price":390
   }
 ]

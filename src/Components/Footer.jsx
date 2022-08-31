@@ -1,11 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Components/Components Styles/Footer.css';
 import '../App.css'
 
 const Footer = () => {
+    const [visible, setVisible] = useState(false)
+
+    const visibility = () => {
+        const scrolled = document.documentElement.scrollTop;
+        if (scrolled > 300) {
+            setVisible(true)
+        }
+        else if (scrolled <= 300) {
+            setVisible(false)
+        }
+    }
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
+    window.addEventListener('scroll', visibility)
     return (
         <div id="footerContainer">
-            <i class="fa-solid fa-circle-question" id='help'></i>
+            <i class="fa-solid fa-headset" id='help' />
             <div id='footerDetails'>
                 <div className="contact">
                     <h1>Contact</h1>
@@ -18,9 +36,9 @@ const Footer = () => {
                 </div>
             </div>
             <div id='copyright'> &copy; Shashank Rai </div>
-            <a href='#top' id='backToTop' > <i className='fa-solid fa-circle-chevron-up'></i>
-            </a>
-           
+            <i className='fa-solid fa-circle-chevron-up' id='backToTop' style={{ display: visible ? 'inline' : 'none' }} onClick={scrollToTop}  ></i>
+
+
         </div>
     )
 }

@@ -1,5 +1,5 @@
 
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useReducer } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AboutPage from './Components/AboutPage';
@@ -12,19 +12,29 @@ import NavBar from './Components/NavBar';
 import Product from './Components/Product';
 
 import sweet from './Assests/Dessert.json';
+import { cartReducer, productReducer } from './Components/Reducer';
 
-export const user = createContext();
+
+const user = createContext();
 
 function App() {
 
-  var [cartSize, setCartSize] = useState(0);
-  var [discount, setDiscount] = useState(0);
-  var [totalPrice, setTotalPrice] = useState(0);
-  var [cart,setCart] = useState([]);
+
+  const [state, dispatch] = useReducer(cartReducer, {
+    products: sweet,
+    cart: []
+  });
+
+  const [productState, productDispatch] = useReducer(productReducer, {
+    search: "",
+    sortPrice: false,
+    sortName: false
+  })
 
   return (
     <>
-      <user.Provider value={{ cart,setCart,cartSize, setCartSize, discount, setDiscount, totalPrice, setTotalPrice }} >
+
+      <user.Provider value={{ state, dispatch, productState, productDispatch }} >
         <div id='body' style={{ backgroundColor: "var(--bg)" }}>
           <Router >
             <NavBar />
@@ -45,3 +55,7 @@ function App() {
 }
 
 export default App;
+
+export const CartState = () => {
+  return useContext(user)
+}

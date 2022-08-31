@@ -1,10 +1,10 @@
-import React,{memo, useContext} from 'react';
+import React, { memo } from 'react';
 import topPicks from '../Assests/Picks.json'
 import TopCard from './Cards Components/topCard';
-import { user } from '../App';
+
 
 const TopPicks = () => {
-    var {cart,setCart,cartSize, setCartSize, discount, setDiscount, totalPrice, setTotalPrice} = useContext(user);
+
     return (
         <div id="topPicks">
             <h1>

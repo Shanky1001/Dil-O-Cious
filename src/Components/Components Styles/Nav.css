@@ -2,6 +2,7 @@
     width: 100%;
     position: fixed;
     z-index: 100;
+    max-height: 5rem;
     background-color: var(--white);
 }
 
@@ -97,6 +98,17 @@
     cursor: pointer;
 }
 
+.cart-btn {
+    position: relative;
+}
+.cart-btn span{
+    position: absolute;
+    color: var(--black);
+    font-size: 3vh;
+    top: -30%;
+    padding-left: 5%;
+    font-weight: 500;
+}
 
 @media screen and (max-width:2000px) {
     .logo img {
