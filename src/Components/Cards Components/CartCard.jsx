@@ -1,20 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import { CartState } from '../../App';
 import '../Components Styles/Cart.css';
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css';
+
 
 const CartCard = () => {
-     const { state: { cart }, dispatch } = CartState();
-
+     // Importing state from context
+     const { state: { cart }, dispatch,open,setOpen } = CartState();
+     // state for counting total Value
      var [total, setTotal] = useState(0);
-
+    
      useEffect(() => {
           var sum = cart.reduce((acc, val) => acc + (val.price * val.qty), 0);
           setTotal(sum);
      }, [cart])
 
+
      return (
           <div id="cartCardContainer">
                <div id="cartList">
+
+                    {/* Mapping to print the items in carts */}
                     {cart.length !== 0 && cart.map((val, index) => {
                          return <div key={index} className="cartProductContainer">
                               <div className='cartProductDetails'>
@@ -22,8 +29,8 @@ const CartCard = () => {
                                    <h3> {val.strMeal}</h3>
                               </div>
                               <div className='cartProductPrice'>
-                                   <p> Price : {val.price}</p>
-                                   <p>Item Price : {val.price * val.qty}</p>
+                                   <p> Price: ₹ {val.price}</p>
+                                   <p>Item Price: ₹ {val.price * val.qty}</p>
                               </div>
                               <div className="cartProductQuantity">
                                    <div className='quantity'>
@@ -44,21 +51,24 @@ const CartCard = () => {
                                         }} />
                                    </div>
                                    <div className='deleteItem'>
-                                        <i class="fa-solid fa-trash-can" onClick={() => {
-                                             dispatch({
-                                                  type: "removeFromCart", payload: val
-                                             })
-                                        }}></i>
+                                        <Tippy content='delete from cart' placement="left">
+                                             <i class="fa-solid fa-trash-can" onClick={() => { setOpen({ open: true, html: "Are your to delete this product from cart ?", type: "trash", value: val }) }}></i>
+                                        </Tippy>
                                    </div>
                               </div>
                          </div>
                     })}
                </div>
+
+                    {/* For Total Sum and Checkout */}
+
                <div id="total">
-                    <div></div>
+                    <div> <button className='clear' onClick={() => {
+                         setOpen({ ...open, open: true, html: "Are your to empty your cart ?", type: "empty" })
+                    }}> Empty Cart </button></div>
                     <div>
-                         <h1>Total : {total}</h1>
-                         <button> Checkout </button>
+                         <h1>Total: ₹{total}</h1>
+                         <button className='checkout'> Checkout </button>
                     </div>
                </div>
 

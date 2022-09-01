@@ -1,5 +1,5 @@
 
-import { createContext, useContext, useReducer } from 'react';
+import { createContext, useContext, useReducer, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AboutPage from './Components/AboutPage';
@@ -13,12 +13,17 @@ import Product from './Components/Product';
 
 import sweet from './Assests/Dessert.json';
 import { cartReducer, productReducer } from './Components/Reducer';
+import { Alert, Button, Dialog, DialogActions, DialogTitle, Snackbar } from '@mui/material';
 
 
 const user = createContext();
 
 function App() {
 
+  // Dialog Box state 
+  const [open, setOpen] = useState({ open: false, html: "", type: "", value: null });
+  // Snackbar State
+  const [openSnack, setOpenSnack] = useState({ open: false, html: "" });
 
   const [state, dispatch] = useReducer(cartReducer, {
     products: sweet,
@@ -31,10 +36,27 @@ function App() {
     sortName: false
   })
 
+  const confirm = () => {
+    if (open.type === 'trash') {
+      dispatch({
+        type: "removeFromCart", payload: open.value
+      })
+      setOpen({ ...open, open: false });
+      setOpenSnack({ open: true, html: `${open.value.strMeal} removed from cart !` })
+    }
+    if (open.type === 'empty') {
+      dispatch({
+        type: "clearCart"
+      })
+      setOpen({ ...open, open: false });
+      setOpenSnack({ open: true, html: ` Your cart is emptied !!` })
+    }
+  }
+
   return (
     <>
 
-      <user.Provider value={{ state, dispatch, productState, productDispatch }} >
+      <user.Provider value={{ state, dispatch, productState, productDispatch,open,setOpen  }} >
         <div id='body' style={{ backgroundColor: "var(--bg)" }}>
           <Router >
             <NavBar />
@@ -48,6 +70,28 @@ function App() {
             </Routes>
             <Footer />
           </Router>
+
+
+          {/* Dialog component from MUI */}
+          <Dialog open={open.open} onClose={() => { setOpen({ ...open, open: false }) }}>
+            <DialogTitle > {open.html} </DialogTitle>
+            <DialogActions>
+              <Button autoFocus onClick={() => { setOpen({ ...open, open: false }) }} >
+                Cancel
+              </Button>
+              <Button onClick={confirm}>Ok</Button>
+            </DialogActions>
+          </Dialog>
+
+
+          {/* Snackbar Component from MUI */}
+
+          <Snackbar open={openSnack.open} autoHideDuration={3000} onClose={() => { setOpenSnack({ ...open, open: false }) }} anchorOrigin={{ vertical: "top", horizontal: 'center' }} >
+            <Alert onClose={() => { setOpenSnack({ ...openSnack, open: false }) }} severity="success" variant='filled' sx={{ width: '100%' }}>
+              {openSnack.html}
+            </Alert>
+          </Snackbar>
+
         </div>
       </user.Provider>
     </>

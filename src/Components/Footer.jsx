@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import '../Components/Components Styles/Footer.css';
 import '../App.css'
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css';
 
 const Footer = () => {
     const [visible, setVisible] = useState(false)
@@ -23,7 +25,12 @@ const Footer = () => {
     window.addEventListener('scroll', visibility)
     return (
         <div id="footerContainer">
-            <i class="fa-solid fa-headset" id='help' />
+            <Tippy interactive={false}
+                content={<p> Help </p>}
+                placement={"right"}
+            >
+                <i className="fa-solid fa-headset" id='help' />
+            </Tippy>
             <div id='footerDetails'>
                 <div className="contact">
                     <h1>Contact</h1>
@@ -36,8 +43,9 @@ const Footer = () => {
                 </div>
             </div>
             <div id='copyright'> &copy; Shashank Rai </div>
-            <i className='fa-solid fa-circle-chevron-up' id='backToTop' style={{ display: visible ? 'inline' : 'none' }} onClick={scrollToTop}  ></i>
-
+            <Tippy content={'Back to top'} placement='left'>
+                <i className='fa-solid fa-circle-chevron-up' id='backToTop' style={{ display: visible ? 'inline' : 'none' }} onClick={scrollToTop}  ></i>
+            </Tippy>
 
         </div>
     )

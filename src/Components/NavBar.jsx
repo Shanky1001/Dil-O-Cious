@@ -1,5 +1,6 @@
 
-import React, { useState} from 'react'
+import Tippy from '@tippyjs/react';
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import { CartState } from '../App';
 import '../App.css'
@@ -7,9 +8,9 @@ import '../Components/Components Styles/Nav.css'
 
 
 const NavBar = () => {
-    
 
-  const {state} = CartState();
+
+    const { state } = CartState();
 
     const [toggle, setToggle] = useState(false);
     const dark = () => {
@@ -18,7 +19,7 @@ const NavBar = () => {
         hideNav()
     }
 
-    const hideNav = ()=>{
+    const hideNav = () => {
         setToggle(false);
     }
 
@@ -35,19 +36,23 @@ const NavBar = () => {
                     <a href='#footerContainer'><h1>Contact</h1></a>
                 </nav>
                 <div className='options'>
-                    <h1 onClick={dark} className="fa-solid fa-moon" id='themeSwitcher'> </h1>
+                    <Tippy content="theme switcher">
+                        <h1 onClick={dark} className="fa-solid fa-moon" id='themeSwitcher'> </h1>
+                    </Tippy>
+                    <Tippy content="cart">
                     <Link to="/cart"><h1 className="fas fa-shopping-cart cart-btn" ><span>{state.cart.length}</span></h1></Link>
+                    </Tippy>
                 </div>
                 <div className="navbarMob" >
                     <i className='fa-solid fa-bars' onClick={(e) => { setToggle(true) }}></i>
                     {toggle && (<div className='overlay'>
                         <h1 className='fa-solid fa-xmark' onClick={(e) => { setToggle(false) }}> </h1>
-                        
+
                         <Link to="/"><h1 onClick={hideNav}>Home</h1></Link>
                         <Link to="/"><h1 onClick={hideNav}>About</h1></Link>
                         <Link to="/menu"><h1 onClick={hideNav}>Menu</h1></Link>
                         <Link to="/"><h1 onClick={hideNav}>Contact</h1></Link>
-                            <hr/>
+                        <hr />
                         <div className='optionsM' >
                             <h1 onClick={dark} className="fa-solid fa-moon" id='themeSwitcher' > </h1>
                             <Link to="/cart"><h1 className="fas fa-shopping-cart cart-btn" onClick={hideNav} ><span>{state.cart.length}</span></h1></Link>

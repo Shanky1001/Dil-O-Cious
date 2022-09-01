@@ -26,13 +26,15 @@
 
 #cartListContainer .emptyCartContainer img {
      filter: invert(var(--invert));
+     width: 80%;
+     height: 85%;
 }
 
 .continueShopping button {
      padding: 1vh 2vh;
      background-color: var(--black);
      color: var(--white);
-     font-size: 2vh;
+     font-size: 2.5vh;
      cursor: pointer;
      font-weight: 700;
      border: none;
@@ -149,10 +151,14 @@
      border: none;
 }
 
-#total button:hover {
+#total .checkout:hover {
      background-color: var(--main);
 }
-
+#total .clear:hover {
+     background-color: rgb(240, 35, 35);
+     color: white;
+ }
+ 
 @media screen and (max-width:1250px) {
      .quantity {
           font-size: 20px;

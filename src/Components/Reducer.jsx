@@ -13,6 +13,9 @@ export const cartReducer = (state, action) => {
           case "decreaseQTY":
                return { ...state, cart: state.cart.filter((c) => (c.idMeal === action.payload.idMeal) ? (c.qty===1 ? c.qty = 1 : c.qty = action.payload.qty) : c.qty) }
 
+          case 'clearCart':
+               return { ...state,cart:[]}
+
           default:
                return state;
      };

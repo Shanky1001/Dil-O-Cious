@@ -13,8 +13,8 @@ const Cart = () => {
       <h1> Items in your cart - ({cart.length}) </h1>
       <div id="cartListContainer">
         {cart.length === 0 ? <div className="emptyCartContainer">
-          <img src=' http://shop4books.co.in/images/empty_cart.png' alt='Empty Cart' />
-          <Link to="/menu" className="continueShopping"><button>Continue Shopping</button></Link>
+          <img src=' https://book.smartercarrentals.com/images/cart.png' alt='Empty Cart' />
+          <Link to="/menu" className="continueShopping"><button>Continue Shopping <i className="fa-solid fa-bag-shopping"></i></button></Link>
         </div>
           : <CartCard />}
       </div>
