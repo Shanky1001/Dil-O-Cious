@@ -15,43 +15,45 @@ const CartCard = () => {
      return (
           <div id="cartCardContainer">
                <div id="cartList">
-                    <div>
-                         <span>#</span>
-                         <span>item</span>
-                         <span>Quantity</span>
-                         <span>Price</span>
-                         <span>Item Price</span>
-                    </div>
                     {cart.length !== 0 && cart.map((val, index) => {
-                         return <div key={index}>
-                              <span>{index + 1}</span>
-                              <span><img src={val.strMealThumb} alt={val.strMeal} /><div>{val.strMeal}</div></span>
-                              <span> <div> <i className="fa-solid fa-circle-plus" onClick={() => {
-                                   dispatch({
-                                        type: "increaseQTY", payload: {
-                                             idMeal: val.idMeal,
-                                             qty: val.qty + 1
-                                        }
-                                   })
-                              }} /> {val.qty} <i className="fa-solid fa-circle-minus" onClick={() => {
-                                   dispatch({
-                                        type: "decreaseQTY", payload: {
-                                             idMeal: val.idMeal,
-                                             qty: val.qty - 1
-                                        }
-                                   })
-                              }} /></div> <p onClick={() => {
-                                   dispatch({
-                                        type: "removeFromCart", payload: val
-                                   })
-                              }}> Remove
-                                   </p></span>
-                              <span>{val.price}</span>
-                              <span>{val.price * val.qty}</span>
+                         return <div key={index} className="cartProductContainer">
+                              <div className='cartProductDetails'>
+                                   <img src={val.strMealThumb} alt={val.strMeal} />
+                                   <h3> {val.strMeal}</h3>
+                              </div>
+                              <div className='cartProductPrice'>
+                                   <p> Price : {val.price}</p>
+                                   <p>Item Price : {val.price * val.qty}</p>
+                              </div>
+                              <div className="cartProductQuantity">
+                                   <div className='quantity'>
+                                        <i className="fa-solid fa-circle-plus" onClick={() => {
+                                             dispatch({
+                                                  type: "increaseQTY", payload: {
+                                                       idMeal: val.idMeal,
+                                                       qty: val.qty + 1
+                                                  }
+                                             })
+                                        }} /> {val.qty} <i className="fa-solid fa-circle-minus" onClick={() => {
+                                             dispatch({
+                                                  type: "decreaseQTY", payload: {
+                                                       idMeal: val.idMeal,
+                                                       qty: val.qty - 1
+                                                  }
+                                             })
+                                        }} />
+                                   </div>
+                                   <div className='deleteItem'>
+                                        <i class="fa-solid fa-trash-can" onClick={() => {
+                                             dispatch({
+                                                  type: "removeFromCart", payload: val
+                                             })
+                                        }}></i>
+                                   </div>
+                              </div>
                          </div>
                     })}
                </div>
-
                <div id="total">
                     <div></div>
                     <div>
@@ -65,3 +67,4 @@ const CartCard = () => {
 }
 
 export default CartCard
+

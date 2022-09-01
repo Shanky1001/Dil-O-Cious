@@ -1,20 +1,22 @@
-#cartContainer{
+#cartContainer {
      padding: 17vh 5vh 5vh 5vh;
      width: 85%;
      margin: auto;
      color: var(--black);
 }
-#cartContainer>h1{
+
+#cartContainer>h1 {
      font-weight: 500;
      font-size: 3.5vh;
      padding-left: 5vh;
      padding-bottom: 3vh;
 }
-#cartListContainer{
+
+#cartListContainer {
      width: 100%;
 }
 
-#cartListContainer .emptyCartContainer{
+#cartListContainer .emptyCartContainer {
      display: flex;
      height: 50vh;
      flex-direction: column;
@@ -22,11 +24,11 @@
      justify-content: space-between;
 }
 
-#cartListContainer .emptyCartContainer img{
+#cartListContainer .emptyCartContainer img {
      filter: invert(var(--invert));
 }
 
-.continueShopping button{
+.continueShopping button {
      padding: 1vh 2vh;
      background-color: var(--black);
      color: var(--white);
@@ -37,11 +39,11 @@
      border-radius: 1vh;
 }
 
-.continueShopping button:hover{
+.continueShopping button:hover {
      background-color: var(--main);
 }
 
-#cartList{
+#cartList {
      width: 100%;
      display: flex;
      flex-direction: column;
@@ -49,175 +51,224 @@
      align-items: center;
      border-collapse: collapse;
 }
-#cartList div{
+
+#cartList .cartProductContainer {
      width: 100%;
      display: flex;
-}
-#cartList div:nth-child(1) span{
-     flex: 1;
-     width: 100%;
-     display: flex;
-     font-size: 3vh;
-     justify-content: space-around;
-     background-color: var(--bColor);
-     font-weight: 700;
-     border:.1vh solid;
-     padding: 2vh 0;
-}
-#cartList>div span{
-     flex: 1;
-     width: 100%;
-     display: flex;
-     min-height: 5rem;
-     font-size: 3vh;
-     justify-content: space-around;
      align-items: center;
-     border: .1vh solid;
+     border: 1px solid;
+     height: 15vh;
+     border-radius: 1vh;
+     border-collapse: collapse;
+     margin-top: 2vh;
+     box-shadow: 0px 0px 25px -10px rgba(18, 18, 161, 0.75);
 }
 
-#cartList div span:nth-child(2),#cartList div span:nth-child(2){
-     flex: 2.5;
+.cartProductContainer .cartProductDetails {
+     flex: 1;
+     margin: auto;
      display: flex;
      align-items: center;
      justify-content: flex-start;
-} 
-
-
-#cartList div span img{
-     width: 8vh;
-}
-#cartList div span div{
-     padding-left: 2px;
 }
 
-.fa-circle-plus, .fa-circle-minus{
-     font-size: 4vh;
-     color: var(--black);
-     cursor: pointer;
+.cartProductContainer .cartProductQuantity {
+     flex: .6;
+     display: flex;
      padding: 0 2vh;
-}
-#cartList div span:nth-child(3){
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-evenly;
+     justify-content: space-between;
 }
 
-#cartList div span:nth-child(3) > div{
-     display: flex;
-     align-items:center;
-     font-size: 2.5vh;
-     justify-content: space-around;
-}
-
-#cartList div span:nth-child(3)>p{
-     cursor: pointer;
-     font-weight: 600;
-     font-size: 2.5vh;
-}
-#cartList div span:nth-child(3)>p:hover{
+.fa-trash-can:hover {
      color: red;
 }
 
-#total{
+
+.cartProductContainer .cartProductDetails img {
+     min-width: 40%;
+     max-width: 40%;
+     height: 14.5vh;
+     border-radius: 1vh;
+}
+
+.cartProductDetails h3 {
+     font-size: 20px;
+     font-weight: 500;
+     margin-left: 2vh;
+}
+
+.cartProductPrice {
+     flex: 1;
+     height: 15vh;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+#cartList .fa-solid {
+     font-size: 30px;
+     cursor: pointer;
+}
+
+.fa-circle-plus,
+.fa-circle-minus {
+     padding: 0 2vh;
+}
+
+.quantity {
+     font-size: 30px;
+}
+
+.price,
+.itemprice {
+     font-size: 20px;
+}
+
+#total {
      display: flex;
      align-items: center;
      justify-content: space-between;
      margin-top: 5vh;
      color: var(--black);
 }
-#total button{
-     font-size: 2.75vh;
+
+#total h1 {
+     padding-right: 3vh;
+     font-size: 20px;
+}
+
+#total button {
+     font-size: 16px;
      padding: 1vh 4vh;
      margin-top: 2vh;
+     margin-right: 3vh;
      font-weight: 600;
      cursor: pointer;
      background-color: var(--black);
      color: var(--white);
      border: none;
 }
-#total button:hover{
+
+#total button:hover {
      background-color: var(--main);
 }
 
-@media screen and (max-width:1000px) {
-     #cartContainer{
-          width: 95%; 
-          padding: 17vh 0vh 5vh 0vh;
+@media screen and (max-width:1250px) {
+     .quantity {
+          font-size: 20px;
+     }
+
+     .price,
+     .itemprice {
+          font-size: 15px;
+     }
+
+     #cartList .fa-solid {
+          font-size: 20px;
+          cursor: pointer;
      }
 }
 
-@media screen and (max-width:890px) {
-     #cartContainer{
-          width: 99%; 
-     }
-     #cartList div span{
-          font-size: 14px;
-     }
-     #cartList div:nth-child(1) span{
-          font-size: 14px;
-     }
-     #total h1, #total button{
-          font-size: 14px;
-     }
-     #cartList div span img{
-          width: 3rem;
-     }
-}
-@media screen and (max-width:690px) {
-     #cartList div span{
-          font-size: 10px;
-     }
-     #cartList div:nth-child(1) span{
-          font-size: 10px;
-     }
-     .fa-circle-plus, .fa-circle-minus{
-          font-size: 14px;
-     }
-     #cartList>div span{
-          min-height: 4rem;
-     }
-     #cartList div span:nth-child(3)>p{ 
-          font-size: 12px;
-     }
-}
-@media screen and (max-width:550px) {
-     #cartList div span:nth-child(3) > div {
-          font-size: 10px;
-     }
-     #cartList div span{
-          font-size: 8px;
-     }
-     #cartList div:nth-child(1) span{
-          font-size: 8px;
-     }
-     .fa-circle-plus, .fa-circle-minus{
-          font-size: 10px;
-     }
-     #cartList>div span{
-          min-height: 3rem;
-     }
-     #cartList div span img{
-          width: 2rem;
-        
+@media screen and (max-width:990px) {
+     #cartContainer {
+          width: 95%;
      }
 }
 
-@media screen and (max-width:450px) {
-     #cartList div span{
-          font-size: 8px;
+@media screen and (max-width:800px) {
+     #cartContainer {
+          width: 99%;
+          padding: 17vh .5vh 5vh .5vh;
      }
-     #cartList div:nth-child(1) span{
-          font-size: 8px;
+
+     .cartProductContainer .cartProductDetails img {
+          min-width: 40%;
+          max-width: 40%;
+          height: 10vh;
+          border-radius: 1vh;
      }
-     .fa-circle-plus, .fa-circle-minus{
-          font-size: 10px;
+
+     .cartProductDetails h3 {
+          font-size: 15px;
+          font-weight: 700;
+          margin-left: 1vh;
      }
-     #cartList>div span{
-          min-height: 3rem;
+
+     #cartList .cartProductContainer {
+          height: 10vh;
      }
-     #cartList div span img{
-          width: 2rem;
-        
+
+     .fa-circle-plus,
+     .fa-circle-minus {
+          padding: 0 1vh;
+     }
+
+     .cartProductContainer .cartProductQuantity {
+          flex: .5;
+          width: 50%;
+          display: flex;
+          padding: 0 1vh;
+          align-items: center;
+          justify-content: space-between;
+     }
+}
+
+@media screen and (max-width:600px) {
+     #cartList .cartProductContainer {
+          flex-direction: column;
+          width: 70%;
+          min-height: 30vh;
+          justify-content: space-evenly;
+     }
+
+     .cartProductPrice {
+          flex-direction: column;
+     }
+     .cartProductContainer .cartProductDetails{
+          flex-direction: column;
+          width: 80%;
+     }
+     .cartProductContainer .cartProductDetails img {
+          min-width: 80%;
+          max-width: 60%;
+          height: 16vh;
+          border-radius: 1vh;
+     }
+
+}
+@media screen and (max-width:370px) {
+     
+     .cartProductContainer .cartProductQuantity {
+          flex: .5;
+          width: 80%;
+          justify-content: space-evenly;
+     }
+     .cartProductContainer .cartProductDetails{
+          flex-direction: column;
+          width: 100%;
+     }
+     .cartProductDetails h3 {
+          font-size: 13px;
+     }
+     .quantity {
+          font-size: 15px;
+     }
+     .cartProductPrice{
+          font-size: 13px;
+     }
+
+     #cartList .fa-solid {
+          font-size: 15px;
+          cursor: pointer;
+     }
+     #cartList .cartProductContainer {
+          flex-direction: column;
+          width: 70%;
+          min-height: 30vh;
+          justify-content: space-evenly;
+     }
+     #cartContainer>h1 {
+          font-weight: 800;
+          font-size: 16px;
      }
 }
