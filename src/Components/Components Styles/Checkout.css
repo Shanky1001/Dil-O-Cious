@@ -32,3 +32,42 @@
 #checkout button:hover{
     background-color: var(--main);
 }
+
+@media screen and (max-width:900px) {
+    #checkout h1{
+        font-size: 22px;
+        margin-bottom: 1.5rem;
+    }
+    #checkout h3{
+        font-size: 20px;
+        margin-bottom: 1.5rem;
+    }
+    #checkout button{
+        padding: .8rem 2.2rem;
+        font-size: 1.2rem;
+        color: var(--white);
+        cursor: pointer;
+        border: none;
+        border-radius: 1vh;
+        background-color: var(--black);
+    }
+}
+
+@media  (max-width:600px) {
+    #checkout{
+        width: 90%;
+        margin: auto;
+    }
+    #checkout h1{
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+    #checkout h3{
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+    }
+    #checkout button{
+        padding: .8rem 2rem;
+        font-size: 1rem;
+    }
+}
