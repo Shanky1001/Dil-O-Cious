@@ -1,4 +1,28 @@
+/* About Page styles starts */
 
+#aboutPageContainer{
+    padding: 10rem 8rem 4rem 8rem;
+}
+#aboutPageContainer>div{
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+#aboutPageContainer h1{
+    font-size: 27px;
+    padding-bottom: 1rem;
+}
+#aboutPageContainer p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.4rem;
+}
+@media screen and (max-width:650px) {
+    #aboutPageContainer{
+        padding: 10rem 3rem 4rem 3rem;
+    }
+    
+}
+/* About Page styles Ends */
 
 #aboutContainer{
     padding: 4rem 0;

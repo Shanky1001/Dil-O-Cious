@@ -3,19 +3,30 @@ import { CartState } from '../../App';
 import '../Components Styles/Cart.css';
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const CartCard = () => {
+
+     const navigate = useNavigate();
+
      // Importing state from context
-     const { state: { cart }, dispatch,open,setOpen } = CartState();
-     // state for counting total Value
-     var [total, setTotal] = useState(0);
-    
+     const { state: { cart }, dispatch, open, setOpen, logged, setOpenSnack, total, setTotal } = CartState();
+
+
      useEffect(() => {
           var sum = cart.reduce((acc, val) => acc + (val.price * val.qty), 0);
           setTotal(sum);
      }, [cart])
 
+     const checkout = () => {
+
+          if (logged === false) {
+               setOpenSnack({ open: true, html: `You are not logged in! Please login first.`, severity: 'error' })
+          } else {
+               navigate('/checkout');
+          }
+     }
 
      return (
           <div id="cartCardContainer">
@@ -60,7 +71,7 @@ const CartCard = () => {
                     })}
                </div>
 
-                    {/* For Total Sum and Checkout */}
+               {/* For Total Sum and Checkout */}
 
                <div id="total">
                     <div> <button className='clear' onClick={() => {
@@ -68,7 +79,7 @@ const CartCard = () => {
                     }}> Empty Cart </button></div>
                     <div>
                          <h1>Total: ₹{total}</h1>
-                         <button className='checkout'> Checkout </button>
+                         <button className='checkout' onClick={checkout}> Checkout </button>
                     </div>
                </div>
 
@@ -76,5 +87,5 @@ const CartCard = () => {
      )
 }
 
-export default CartCard
+export default CartCard;
 

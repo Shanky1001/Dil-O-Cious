@@ -54,8 +54,7 @@
     font-size: 2.5vh;
     font-weight: 600;
     color: var(--black);
-    padding: .3rem 0;
-
+    flex: 1;
 }
 .type img{
     width: 3vh;
@@ -99,6 +98,9 @@
     background-color: red;
     padding: 1vh;
 }
+.topCardContainer .addToWishlist:hover{
+    background-color: tomato;
+}
 .topCardContainer .viewDetails{
     font-size: 3vh;
     border: none;
@@ -131,7 +133,7 @@
 @media screen and (max-width: 930px) {
     .topCardContainer{
         width: 40%;
-        height: 48vh;
+        height: 37vh;
     }
     .topCardContainer>img{
         width: 80%;
@@ -142,6 +144,7 @@
 @media screen and (max-width:750px) {
     .topCardContainer{
         width: 45%;
+        height: 40vh;
     }
     .topCardContainer>img{
         width: 80%;
@@ -160,7 +163,7 @@
 @media screen and (max-width:490px) {
     .topCardContainer{
         width: 80%;
-        height: 50vh;
+        height: 37vh;
         margin-bottom: 1rem;
     }
 }

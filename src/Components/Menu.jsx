@@ -27,7 +27,7 @@ const Menu = () => {
     }
 
     if (search !== '') {
-      sortedProducts = sortedProducts.filter((p) => p.strMeal.toLowerCase().trim().startsWith(search.toLowerCase().trim()));
+      sortedProducts = sortedProducts.filter((p) => p.strMeal.toLowerCase().trim().includes(search.toLowerCase().trim()));
     }
 
     return sortedProducts

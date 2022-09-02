@@ -4,6 +4,7 @@
     z-index: 100;
     max-height: 5rem;
     background-color: var(--white);
+    box-shadow: 0px 22px 47px -32px rgba(55, 65, 176, 1);
 }
 
 .header {
@@ -82,6 +83,11 @@
     font-size: 4.5vh;
 }
 
+.overlay h1:hover {
+    text-decoration: underline !important;
+    color: var(--black);
+}
+
 .navbarMob .fa-xmark {
     font-size: 4.5vh;
     color: var(--black);
@@ -101,7 +107,8 @@
 .cart-btn {
     position: relative;
 }
-.cart-btn span{
+
+.cart-btn span {
     position: absolute;
     color: var(--black);
     font-size: 3vh;
@@ -153,6 +160,17 @@
 
     .header .navbarMob .optionsM {
         display: flex;
+    }
 
+    .overlay {
+        padding-top: 6%;
+        justify-content: flex-start;
+    }
+
+    .overlay h1 {
+        cursor: pointer;
+        color: var(--black);
+        margin: 1rem 2rem;
+        font-size: 3.5vh;
     }
 }

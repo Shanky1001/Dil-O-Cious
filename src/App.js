@@ -14,6 +14,8 @@ import Product from './Components/Product';
 import sweet from './Assests/Dessert.json';
 import { cartReducer, productReducer } from './Components/Reducer';
 import { Alert, Button, Dialog, DialogActions, DialogTitle, Snackbar } from '@mui/material';
+import Login from './Components/Login';
+import SignIn from './Components/SignIn';
 
 
 const user = createContext();
@@ -23,7 +25,12 @@ function App() {
   // Dialog Box state 
   const [open, setOpen] = useState({ open: false, html: "", type: "", value: null });
   // Snackbar State
-  const [openSnack, setOpenSnack] = useState({ open: false, html: "" });
+  const [openSnack, setOpenSnack] = useState({ open: false, html: "", severity: "success", time: "800" });
+  // State for login
+  const [logged, setLogged] = useState(false);
+  const [userName, setUserName] = useState("");
+  // state for counting total Value
+  const [total, setTotal] = useState(0);
 
   const [state, dispatch] = useReducer(cartReducer, {
     products: sweet,
@@ -55,8 +62,8 @@ function App() {
 
   return (
     <>
-
-      <user.Provider value={{ state, dispatch, productState, productDispatch,open,setOpen  }} >
+      <user.Provider value={{ state, dispatch, productState, productDispatch, open, setOpen, openSnack, setOpenSnack, logged, setLogged, userName, setUserName,total, setTotal }} >
+        
         <div id='body' style={{ backgroundColor: "var(--bg)" }}>
           <Router >
             <NavBar />
@@ -67,6 +74,8 @@ function App() {
               <Route path='/menu' element={<Menu />} />
               <Route path='/product/:ID' element={<Product />} />
               <Route path='/checkout' element={<Checkout />} />
+              <Route path='/login' element={<Login />} />
+              <Route path='/create' element={<SignIn />} />
             </Routes>
             <Footer />
           </Router>
@@ -86,8 +95,8 @@ function App() {
 
           {/* Snackbar Component from MUI */}
 
-          <Snackbar open={openSnack.open} autoHideDuration={3000} onClose={() => { setOpenSnack({ ...open, open: false }) }} anchorOrigin={{ vertical: "top", horizontal: 'center' }} >
-            <Alert onClose={() => { setOpenSnack({ ...openSnack, open: false }) }} severity="success" variant='filled' sx={{ width: '100%' }}>
+          <Snackbar open={openSnack.open} autoHideDuration={openSnack.time} onClose={() => { setOpenSnack({ ...open, open: false }) }} anchorOrigin={{ vertical: "top", horizontal: 'center' }} >
+            <Alert onClose={() => { setOpenSnack({ ...openSnack, open: false }) }} severity={openSnack.severity} variant='filled' sx={{ width: '100%' }}>
               {openSnack.html}
             </Alert>
           </Snackbar>

@@ -1,0 +1,77 @@
+#registerContainer {
+    width: 40%;
+    margin: auto;
+    color: var(--black);
+    padding: 5rem 0;
+}
+
+#registerForm {
+    background-color: var(--bColor);
+    border: 1px solid black;
+    border-radius: 2vh;
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#registerForm div {
+    width: 70%;
+    height: 100%;
+    margin: 2vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+#registerForm h1 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: .5rem 0;
+}
+
+
+#registerForm input {
+    font-size: 18px;
+    font-weight: 300;
+    padding: .2rem .5rem;
+    border-radius: 1vh;
+    border: none;
+    outline-color: var(--black);
+}
+
+#registerForm button {
+    font-size: 20px;
+    padding: .3rem 1rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 1vh;
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+}
+#registerForm button:hover{
+    background-color: var(--main);
+}
+
+@media screen and (max-width:900px) {
+    #registerContainer{
+        width: 60%;
+    }
+    
+}
+
+
+@media screen and (max-width:600px) {
+    #registerContainer{
+        width: 90%;
+    }
+    #registerForm div {
+        width: 90%;
+        height: 100%;
+        margin: 2vh auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem 0;
+    }
+    
+}

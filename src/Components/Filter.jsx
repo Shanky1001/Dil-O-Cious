@@ -8,7 +8,8 @@ const Filter = () => {
      
      return (
           <div id="filterContainer">
-               <h3> Filters    <i className="fa-solid fa-filter"></i> </h3>
+              <div style={{position:"fixed"}}>
+              <h3> Filters    <i className="fa-solid fa-filter"></i> </h3>
                <div id="radioFilter">
                     <p> Name - </p>
                     <span><input type='radio' name='group-1' value='ascending-name' onChange={() => {
@@ -52,6 +53,7 @@ const Filter = () => {
                          type:"clearFilters"
                     })
                }}> Clear Filters </button>
+              </div>
           </div>
      )
 }
