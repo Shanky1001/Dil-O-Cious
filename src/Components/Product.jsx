@@ -1,9 +1,87 @@
+
+import { Typography } from '@mui/material';
+import { Box } from '@mui/system';
 import React from 'react'
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { useParams } from 'react-router-dom'
+import { CartState } from '../App'
+import './Components Styles/Product.css'
 
 const Product = () => {
-  return (
-    <div>Product</div>
-  )
+    const params = useParams();
+    const id = params.ID;
+    const { state, dispatch, setOpenSnack } = CartState();
+    let quan = 0;
+    const [val, setVal] = useState();
+    useEffect(() => {
+        state.products.forEach((val) => {
+            if (val.idMeal === id)
+                setVal(val)
+        })
+    })
+
+    return (
+        <>
+            {val !== undefined && <>
+                <Box id="productContainer">
+                    <button onClick={() => window.history.go(-1)}> <i className="fa-solid fa-arrow-left" />  Go back</button>
+                    <div id='detail'>
+                        <div>
+                            <img src={val.strMealThumb} alt={val.strMeal}  />
+                        </div>
+                        <div id='detailsProd'>
+                            <Typography sx={{ fontSize: "2rem"}} variant="h3"> {val.strMeal}</Typography>
+                            <Typography sx={{ fontSize: "1.5rem"}} variant="h3"> Price: ₹{val.price} <span className='wrongPrice'>{val.price + 50}</span> </Typography>
+
+                            <div className='quantity'>
+                                Quantity: {state.cart.some((p) => p.idMeal === val.idMeal) ? <> <i className="fa-solid fa-circle-plus" onClick={() => {
+                                    dispatch({
+                                        type: "increaseQTY", payload: {
+                                            idMeal: val.idMeal,
+                                            qty: quan + 1
+                                        }
+                                    })
+                                }} />
+                                    {state.cart.forEach((p) => { if (p.idMeal === val.idMeal) quan = p.qty })}
+                                    {quan !== null && quan}
+                                    <i className="fa-solid fa-circle-minus" onClick={() => {
+                                        dispatch({
+                                            type: "decreaseQTY", payload: {
+                                                idMeal: val.idMeal,
+                                                qty: quan - 1
+                                            }
+                                        })
+                                    }} />
+                                </> : 0}
+                            </div>
+                            <Typography variant='h6'> Area: {val.strArea} </Typography>
+                            <Typography variant='h6'> Tags: {val.strTags} </Typography>
+                            {quan === 0 ? <button className='addtoCart' onClick={() => {
+                                dispatch({
+                                    type: "addToCart", payload: val
+                                })
+                                setOpenSnack({ open: true, html: `${val.strMeal} is added to cart`, severity: "success", time: "800" })
+                            }} > Add to Cart</button> : <button className='remove' onClick={() => {
+                                dispatch({
+                                    type: "removeFromCart", payload: val
+                                })
+                                setOpenSnack({ open: true, html: `${val.strMeal} is removed from cart`, severity: "success", time: "800" })
+                            }}> Remove from Cart</button>}
+                            {val.strSource && <Typography element='button'><a href={val.strSource} target='blank' className="link"> Know More</a> </Typography>}
+                        </div>
+                    </div>
+                    <div id="more">
+                        <p id='instruction'> {val.strInstructions}</p>
+                        <iframe src={val.strYoutube} title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    </div>
+                </Box>
+            </>}
+
+        </>
+    )
 }
 
 export default Product
+
+

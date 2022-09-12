@@ -39,8 +39,6 @@ const Login = () => {
                 <div>
                     <h1>Email-Id</h1>
                     <input type='email' placeholder='email@abc.com' required autoFocus id='emailLog' />
-                    <h1>User Name </h1>
-                    <input type='text' placeholder='username' required id='uname' />
                     <h1> Password </h1>
                     <input type='password' placeholder='password' required id='passlogin' />
                     <p id="notice"></p>

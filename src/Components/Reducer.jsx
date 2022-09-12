@@ -8,13 +8,13 @@ export const cartReducer = (state, action) => {
                return { ...state, cart: state.cart.filter((c) => c.idMeal !== action.payload.idMeal) }
 
           case "increaseQTY":
-               return { ...state, cart: state.cart.filter((c) => (c.idMeal === action.payload.idMeal) ? c.qty = action.payload.qty : c.qty) }
+               return { ...state, cart: state.cart.filter((c) => (c.idMeal === action.payload.idMeal) ? c.qty = (action.payload.qty) : c.qty) }
 
           case "decreaseQTY":
-               return { ...state, cart: state.cart.filter((c) => (c.idMeal === action.payload.idMeal) ? (c.qty===1 ? c.qty = 1 : c.qty = action.payload.qty) : c.qty) }
+               return { ...state, cart: state.cart.filter((c) => (c.idMeal === action.payload.idMeal) ? (c.qty === 1 ? c.qty = 1 : c.qty = action.payload.qty) : c.qty) }
 
           case 'clearCart':
-               return { ...state,cart:[]}
+               return { ...state, cart: [] }
 
           default:
                return state;
@@ -33,12 +33,12 @@ export const productReducer = (state, action) => {
           case 'searchByName':
 
                return { ...state, search: action.payload }
-          
+
           case 'clearFilters':
                return {
-                    search:"",
-                    sortPrice:false,
-                    sortName:false
+                    search: "",
+                    sortPrice: false,
+                    sortName: false
                }
 
           default:

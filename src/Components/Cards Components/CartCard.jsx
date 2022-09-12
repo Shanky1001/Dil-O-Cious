@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect} from 'react';
 import { CartState } from '../../App';
 import '../Components Styles/Cart.css';
 import Tippy from '@tippyjs/react'

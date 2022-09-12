@@ -30,4 +30,6 @@
     --invert:100%;
     --bColor:rgb(15, 15, 15);
 }
-
+.wrongPrice{
+    text-decoration: line-through !important;
+}

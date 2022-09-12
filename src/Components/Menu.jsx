@@ -14,7 +14,6 @@ const Menu = () => {
   const transformedProducts = () => {
     let sortedProducts = products.filter((a) => { return true });
 
-
     if (sortPrice) {
       sortedProducts = sortedProducts.sort((a, b) =>
         sortPrice === 'lowToHigh' ? a.price - b.price : sortPrice === 'highToLow' && b.price - a.price

@@ -1,0 +1,135 @@
+.wrongPrice {
+    text-decoration: line-through !important;
+}
+
+#productContainer {
+    width: 90%;
+    margin: auto;
+    padding: 8rem 5rem 5rem 5rem;
+}
+
+#productContainer>button {
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--bg);
+    background-color: var(--black);
+    border: none;
+    border-radius: 5px;
+    padding: .3vh .8vh;
+    margin-bottom: 2rem;
+}
+
+#detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem 2rem;
+}
+
+#detail img {
+    width: 300px;
+}
+
+#detailsProd {
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.addtoCart,
+.remove {
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1.3rem;
+    border: none;
+    width: 70% !important;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+
+.addtoCart:hover {
+    background-color: green;
+    transform: scaleX(1.05);
+}
+
+.remove:hover {
+    background-color: red;
+    transform: scaleX(1.05);
+}
+
+.link {
+    display: block;
+    font-size: 1.4rem;
+    background-color: var(--main);
+    color: var(--bg);
+    border-radius: 5px;
+    width: 70%;
+    text-align: center;
+}
+
+.link:hover {
+    transform: scaleX(1.05);
+}
+
+#more {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 1rem;
+    padding: 2rem 0rem;
+}
+
+#instruction {
+    line-height: 1.5rem;
+    text-align: justify;
+    font-size: 16px;
+    width: 50%;
+}
+
+#more iframe {
+    flex: 1;
+}
+
+@media screen and (max-width:900px) {
+    #productContainer {
+        width: 100%;
+        margin: auto;
+        padding: 8rem 1rem 5rem 1rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #detail {
+        flex-direction: column;
+    }
+
+    #detail img {
+        margin: 0 2%;
+        width: 95%;
+    }
+
+    #detailsProd {
+        width: 95%;
+        margin: auto;
+        min-height: 50vh;
+        text-align: center;
+    }
+
+    .addtoCart,
+    .remove {
+        width: 95% !important;
+    }
+
+    .link {
+        width: 95%;
+    }
+    #more{
+        flex-direction: column-reverse;
+        margin: auto;
+    }
+    #instruction {
+        width: 95%;
+    }
+}

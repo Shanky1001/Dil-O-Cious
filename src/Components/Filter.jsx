@@ -7,8 +7,8 @@ const Filter = () => {
      const { productState: {  sortPrice, sortName }, productDispatch } = CartState();
      
      return (
-          <div id="filterContainer">
-              <div style={{position:"fixed"}}>
+          <div id="filterContainer"  style={{position:"sticky",top:"9rem"}}>
+              <div>
               <h3> Filters    <i className="fa-solid fa-filter"></i> </h3>
                <div id="radioFilter">
                     <p> Name - </p>
