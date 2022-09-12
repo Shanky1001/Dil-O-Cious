@@ -22,7 +22,7 @@ const CartCard = () => {
      const checkout = () => {
 
           if (logged === false) {
-               setOpenSnack({ open: true, html: `You are not logged in! Please login first.`, severity: 'error' })
+               setOpenSnack({ open: true, html: `You are not logged in! Please login first.`, severity: 'error',time:"1500" })
           } else {
                navigate('/checkout');
           }
