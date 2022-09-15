@@ -27,7 +27,6 @@
     align-items: center;
     justify-content: center;
     border: 1px solid var(--black);
-    cursor: pointer;
     border-radius: 2vh;
     color: var(--black);
     box-shadow: 0px 0px 19px -1px rgba(32,54,145,1);

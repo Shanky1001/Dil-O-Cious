@@ -5,7 +5,6 @@
 #carouselMain div img {
     position: relative;
     width: 100% !important;
-    cursor: pointer;
     height: 30% !important;
 }
 
