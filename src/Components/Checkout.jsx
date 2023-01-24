@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartState } from '../App';
-import './Components Styles/Checkout.css'
-import checkout from '../Assests/checkout.gif'
+import './Components Styles/Checkout.css';
+import checkout from '../Assests/checkout.gif';
 
 const Checkout = () => {
   const { state: { cart }, dispatch,userName, total } = CartState();
