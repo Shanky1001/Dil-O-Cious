@@ -1,5 +1,5 @@
 import React from 'react';
-import './Components Styles/login.css'
+import './Components Styles/login.css';
 import { useNavigate } from 'react-router-dom';
 import { CartState } from '../App';
 import data from '../Assests/userData.json'
