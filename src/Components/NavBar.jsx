@@ -1,10 +1,10 @@
 
 import Tippy from '@tippyjs/react';
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartState } from '../App';
-import '../App.css'
-import '../Components/Components Styles/Nav.css'
+import '../App.css';
+import '../Components/Components Styles/Nav.css';
 
 
 const NavBar = () => {
