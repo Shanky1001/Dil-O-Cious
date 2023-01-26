@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import '../Components/Components Styles/Footer.css';
-import '../App.css'
-import Tippy from '@tippyjs/react'
+import '../App.css';
+import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 
 const Footer = () => {
-    const [visible, setVisible] = useState(false)
+    const [visible, setVisible] = useState(false);
 
     const visibility = () => {
         const scrolled = document.documentElement.scrollTop;
