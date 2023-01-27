@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'
+import '../App.css';
 import '../Components/Components Styles/Main.css';
 import Slider from "react-slick";
 import testimonial from '../Assests/Testimonials.json';
