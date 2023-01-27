@@ -1,7 +1,7 @@
 import React, { useEffect} from 'react';
 import { CartState } from '../../App';
 import '../Components Styles/Cart.css';
-import Tippy from '@tippyjs/react'
+import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useNavigate } from 'react-router-dom';
 
