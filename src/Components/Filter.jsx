@@ -1,6 +1,6 @@
 import React from 'react';
 import { CartState } from '../App';
-import '../Components/Components Styles/Menu.css'
+import '../Components/Components Styles/Menu.css';
 
 const Filter = () => {
 
