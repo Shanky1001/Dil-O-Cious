@@ -3,8 +3,6 @@ import axios from 'axios'
 import '../Components/Components Styles/Category.css';
 import CategoryCard from './Cards Components/CategoryCard';
 
-
-
 const Category = () => {
     var [category, setCategory] = useState([]);
 

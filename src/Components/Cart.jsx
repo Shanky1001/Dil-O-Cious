@@ -1,12 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { CartState } from '../App'
+// import { CartState } from '../App'
 import '../Components/Components Styles/Cart.css'
 import CartCard from './Cards Components/CartCard';
 
 const Cart = () => {
-
-  const { state: { cart } } = CartState();
+  const cart = useSelector(state => state.cart.cart)
 
   return (
     <div id="cartContainer">

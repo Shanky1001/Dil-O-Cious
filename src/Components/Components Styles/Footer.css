@@ -7,8 +7,8 @@
     height: fit-content;
     background-color: rgb(31, 29, 29);
     color: white;
-    border-top: .1vh solid white;
-    padding: 5vh 0;
+    border-top: .1rem solid white;
+    padding: 2rem 0;
 }
 
 #footerDetails {
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6vh 5vh;
+    padding: 3rem 1.5rem;
     gap: 5vh;
 }
 
@@ -33,36 +33,38 @@
 }
 
 #footerDetails .contact p {
-    font-size: 3vh;
+    font-size: 1.2rem;
     text-align: start;
-    padding: 1vh 0;
+    padding: .5rem 0;
+    letter-spacing: .1rem;
 }
 
 #footerDetails .contact p i {
-    padding-right: 1vh;
+    padding-right: .5rem;
 }
 
 #footerDetails .details {
     flex: 70%;
     text-align: justify;
-    font-size: 2.5vh;
+    font-size: 1.2rem;
     line-height: 2rem;
+    letter-spacing: .1rem;
 }
 
 #footerContainer #copyright {
     text-align: center;
     width: 80%;
-    padding-top: 3vh;
-    border-top: .1vh solid white;
-    font-size: 3vh;
+    padding-top: 2rem;
+    border-top: .1rem solid white;
+    font-size: 1.5rem;
 }
 
 #help {
     position: fixed;
     color: var(--black);
-    top: 87%;
-    left: 2%;
-    font-size: 8vh;
+    top: 36rem;
+    left: 2rem;
+    font-size: 3rem;
     cursor: pointer;
     border-radius: 10%;
     z-index: 10000;
@@ -70,16 +72,14 @@
 
 #backToTop {
     position: fixed;
-    bottom: 10%;
-    right: 3%;
+    bottom: 7rem;
+    right: 5rem;
     color: var(--black);
     z-index: 10000;
-    font-size: 10vh;
-    width: 3%;
+    font-size: 3rem;
+    width: 15px;
     cursor: pointer;
 }
-
-
 
 
 @media screen and (max-width: 1450px) {
@@ -87,13 +87,6 @@
         width: 95%;
     }
 
-    #footerDetails .details {
-        font-size: 2vh;
-    }
-
-    #footerDetails .contact p {
-        font-size: 2vh;
-    }
 }
 
 @media screen and (max-width: 980px) {
@@ -106,20 +99,9 @@
         justify-content: flex-start;
     }
 
-    #footerDetails .details {
-        font-size: 2vh;
-    }
-
-    #footerDetails .contact p {
-        font-size: 2vh;
-    }
-
-    #backToTop {
-        font-size: 5vh;
-    }
-
-    #help {
-        font-size: 5vh;
+    #footerDetails .contact {
+        border-bottom: .1vh solid #fff;
+        border-right: none;
     }
 }
 
@@ -133,11 +115,9 @@
         display: none;
     }
 
-    #backToTop {
-        font-size: 3vh;
+    #footerDetails .contact {
+        border-bottom: none;
+        border-right: none;
     }
 
-    #help {
-        font-size: 3vh;
-    }
 }

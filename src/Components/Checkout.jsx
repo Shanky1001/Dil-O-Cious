@@ -3,14 +3,18 @@ import { useNavigate } from 'react-router-dom';
 import { CartState } from '../App';
 import './Components Styles/Checkout.css'
 import checkout from '../Assests/checkout.gif'
+import { useDispatch, useSelector } from 'react-redux';
+import { clearCart } from '../redux/Slices/CartSlice';
 
 const Checkout = () => {
-  const { state: { cart }, dispatch,userName, total } = CartState();
+  const { userName, total } = CartState();
+  const cart = useSelector(state => state.cart.cart);
+  const dispatch = useDispatch();
+
   const navigate = useNavigate();
+
   const reset = () => {
-    dispatch({
-      type: "clearCart"
-    })
+    dispatch(clearCart);
     navigate('/menu');
   }
 

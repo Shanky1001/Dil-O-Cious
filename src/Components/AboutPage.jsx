@@ -13,7 +13,7 @@ const AboutPage = () => {
 
           But what can be more exciting than the food which elevates the level of fun and passion in you and your life? A smile. Yes, it is everything that can change the stressed you into a happy you and we present to you some of the food items that definitely bring smile on your face.
         </p>
-      </div>
+      </div> 
       <div id="whoweare">
         <h1> Who We Are </h1>
         <p>

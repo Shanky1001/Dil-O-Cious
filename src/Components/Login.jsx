@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartState } from '../App';
 import './Components Styles/login.css';
-import userData from '../Assests/userData.json'
+import userData from '../Assests/data/userData.json'
 
 const Login = () => {
     const navigate = useNavigate();

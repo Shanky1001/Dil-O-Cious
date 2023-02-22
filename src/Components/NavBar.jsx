@@ -1,6 +1,7 @@
 
 import Tippy from '@tippyjs/react';
 import React, { useState } from 'react'
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { CartState } from '../App';
 import '../App.css'
@@ -9,7 +10,8 @@ import '../Components/Components Styles/Nav.css'
 
 const NavBar = () => {
 
-    const { state: { cart }, logged, setLogged, userName } = CartState();
+    const { logged, setLogged, userName } = CartState();
+    const cart = useSelector(state => state.cart.cart);
     const [toggle, setToggle] = useState(false);
 
     const dark = () => {

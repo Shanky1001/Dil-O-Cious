@@ -1,18 +1,19 @@
 import React from 'react';
-import { CartState } from '../App';
+import { useDispatch, useSelector } from 'react-redux';
 import TopCard from './Cards Components/topCard';
 import './Components Styles/Menu.css';
 import Filter from './Filter';
-
-
+import { searchByName } from '../redux/Slices/FilterSlice';
 
 const Menu = () => {
 
-  const { state: { products }, productState: { search, sortPrice, sortName }, productDispatch } = CartState();
-
+  const filterState = useSelector(state => state.filter);
+  const { search, sortPrice, sortName } = filterState;
+  const product = useSelector(state => state.cart.products);
+  const dispatch = useDispatch();
 
   const transformedProducts = () => {
-    let sortedProducts = products.filter((a) => { return true });
+    let sortedProducts = product.filter((a) => { return true });
 
     if (sortPrice) {
       sortedProducts = sortedProducts.sort((a, b) =>
@@ -24,7 +25,6 @@ const Menu = () => {
         sortName === 'lowToHigh' ? (a.strMeal < b.strMeal ? -1 : 1) : sortName === 'highToLow' && (a.strMeal > b.strMeal ? -1 : 1)
       )
     }
-
     if (search !== '') {
       sortedProducts = sortedProducts.filter((p) => p.strMeal.toLowerCase().trim().includes(search.toLowerCase().trim()));
     }
@@ -38,11 +38,8 @@ const Menu = () => {
         <Filter />
       </div>
       <div id="menuItemsContainer">
-        <div id="heading"> <h1> Our Products - <span>{products.length} items </span></h1> <input placeholder='search by name' id="search" onChange={(e) => {
-          productDispatch({
-            type: 'searchByName',
-            payload: e.target.value
-          })
+        <div id="heading"> <h1> Our Products - <span>{product.length} items </span></h1> <input placeholder='search by name' id="search" onChange={(e) => {
+          dispatch(searchByName(e.target.value))
         }} value={search} /></div>
         <div id="menuItemsListContainer">
           {transformedProducts().length === 0 ? <h1>Sorry, No matching Products found!</h1> : transformedProducts().map((val) => {

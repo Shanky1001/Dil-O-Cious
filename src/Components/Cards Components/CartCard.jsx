@@ -1,9 +1,11 @@
-import React, { useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { CartState } from '../../App';
 import '../Components Styles/Cart.css';
 import Tippy from '@tippyjs/react'
 import 'tippy.js/dist/tippy.css';
 import { useNavigate } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { decreaseQTY, increaseQTY } from '../../redux/Slices/CartSlice';
 
 
 const CartCard = () => {
@@ -11,18 +13,19 @@ const CartCard = () => {
      const navigate = useNavigate();
 
      // Importing state from context
-     const { state: { cart }, dispatch, open, setOpen, logged, setOpenSnack, total, setTotal } = CartState();
-
+     const { open, setOpen, logged, setOpenSnack, total, setTotal } = CartState();
+     const cart = useSelector(state => state.cart.cart);
+     const dispatch = useDispatch();
 
      useEffect(() => {
           var sum = cart.reduce((acc, val) => acc + (val.price * val.qty), 0);
           setTotal(sum);
-     }, [cart])
+     }, [cart, setTotal])
 
      const checkout = () => {
 
           if (logged === false) {
-               setOpenSnack({ open: true, html: `You are not logged in! Please login first.`, severity: 'error',time:"1500" })
+               setOpenSnack({ open: true, html: `You are not logged in! Please login first.`, severity: 'error', time: "1500" })
           } else {
                navigate('/checkout');
           }
@@ -46,19 +49,9 @@ const CartCard = () => {
                               <div className="cartProductQuantity">
                                    <div className='quantity'>
                                         <i className="fa-solid fa-circle-plus" onClick={() => {
-                                             dispatch({
-                                                  type: "increaseQTY", payload: {
-                                                       idMeal: val.idMeal,
-                                                       qty: val.qty + 1
-                                                  }
-                                             })
+                                             dispatch(increaseQTY({ idMeal: val.idMeal, qty: val.qty + 1 }))
                                         }} /> {val.qty} <i className="fa-solid fa-circle-minus" onClick={() => {
-                                             dispatch({
-                                                  type: "decreaseQTY", payload: {
-                                                       idMeal: val.idMeal,
-                                                       qty: val.qty - 1
-                                                  }
-                                             })
+                                             dispatch(decreaseQTY({ idMeal: val.idMeal, qty: val.qty - 1 }))
                                         }} />
                                    </div>
                                    <div className='deleteItem'>

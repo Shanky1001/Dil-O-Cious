@@ -27,11 +27,9 @@ export const productReducer = (state, action) => {
                return { ...state, sortPrice: action.payload }
 
           case 'byName':
-
                return { ...state, sortName: action.payload }
 
           case 'searchByName':
-
                return { ...state, search: action.payload }
 
           case 'clearFilters':

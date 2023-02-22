@@ -1,5 +1,5 @@
 
-import { createContext, useContext, useReducer, useState } from 'react';
+import { createContext, useContext, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import AboutPage from './Components/AboutPage';
@@ -10,13 +10,13 @@ import Main from './Components/Main';
 import Menu from './Components/Menu';
 import NavBar from './Components/NavBar';
 
-import sweet from './Assests/Dessert.json';
-import { cartReducer, productReducer } from './Components/Reducer';
 import { Alert, Button, Dialog, DialogActions, DialogTitle, Snackbar } from '@mui/material';
 import Login from './Components/Login';
 import SignIn from './Components/SignIn';
 import Product from './Components/Product';
 
+import { clearCart, removeFromCart } from './redux/Slices/CartSlice';
+import { useDispatch } from 'react-redux';
 
 const user = createContext();
 function App() {
@@ -33,29 +33,27 @@ function App() {
   // State for Modal
   const [openModal, setOpenModal] = useState({ val: [], open: false })
 
-  const [state, dispatch] = useReducer(cartReducer, {
-    products: sweet,
-    cart: []
-  });
+  // const [state, dispatch] = useReducer(cartReducer, {
+  //   products: sweet,
+  //   cart: []
+  // });
 
-  const [productState, productDispatch] = useReducer(productReducer, {
-    search: "",
-    sortPrice: false,
-    sortName: false
-  })
+  // const [productState, productDispatch] = useReducer(productReducer, {
+  //   search: "",
+  //   sortPrice: false,
+  //   sortName: false
+  // })
+
+  const dispatch = useDispatch();
 
   const confirm = () => {
     if (open.type === 'trash') {
-      dispatch({
-        type: "removeFromCart", payload: open.value
-      })
+      dispatch(removeFromCart(open.value))
       setOpen({ ...open, open: false });
       setOpenSnack({ open: true, html: `${open.value.strMeal} removed from cart !` })
     }
     if (open.type === 'empty') {
-      dispatch({
-        type: "clearCart"
-      })
+      dispatch(clearCart())
       setOpen({ ...open, open: false });
       setOpenSnack({ open: true, html: ` Your cart is emptied !!` })
     }
@@ -63,8 +61,7 @@ function App() {
 
   return (
     <>
-      <user.Provider value={{ state, dispatch, productState, productDispatch, open, setOpen, openSnack, setOpenSnack, logged, setLogged, userName, setUserName, total, setTotal, openModal, setOpenModal }} >
-
+      <user.Provider value={{ open, setOpen, openSnack, setOpenSnack, logged, setLogged, userName, setUserName, total, setTotal, openModal, setOpenModal }} >
         <div id='body' style={{ backgroundColor: "var(--bg)" }}>
           <Router >
             <NavBar />
@@ -94,9 +91,7 @@ function App() {
             </DialogActions>
           </Dialog>
 
-
           {/* Snackbar Component from MUI */}
-
           <Snackbar open={openSnack.open} autoHideDuration={Number(openSnack.time)} onClose={() => { setOpenSnack({ ...open, open: false }) }} anchorOrigin={{ vertical: "top", horizontal: 'center' }} >
             <Alert onClose={() => { setOpenSnack({ ...openSnack, open: false }) }} severity={openSnack.severity} variant='filled' sx={{ width: '100%' }}>
               {openSnack.html}

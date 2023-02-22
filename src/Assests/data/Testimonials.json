@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Suchi Bijawat",
+    "src": "/testimonial-image/testimonial_1.jpg",
+    "heading": "Nice Experience",
+    "review": "Dilocious delivers the best of local flavours at your doorstep. Heavenly for those who live away from their loved places or those who want to relish the best of authentic cuisines from across India. Amazing service !! Keep it up you guys",
+    "location": "Lucknow"
+  },
+  {
+    "id": 2,
+    "name": "Suchi Bijawat",
+    "src": "/testimonial-image/testimonial_2.jpg",
+    "heading": "Nice Experience",
+    "review": "Dilocious delivers the best of local flavours at your doorstep. Heavenly for those who live away from their loved places or those who want to relish the best of authentic cuisines from across India. Amazing service !! Keep it up you guys",
+    "location": "Lucknow"
+  },
+  {
+    "id": 3,
+    "name": "Suchi Bijawat",
+    "src": "/testimonial-image/testimonial_3.jpg",
+    "heading": "Nice Experience",
+    "review": "Dilocious delivers the best of local flavours at your doorstep. Heavenly for those who live away from their loved places or those who want to relish the best of authentic cuisines from across India. Amazing service !! Keep it up you guys",
+    "location": "Lucknow"
+  },
+  {
+    "id": 4,
+    "name": "Suchi Bijawat",
+    "src": "/testimonial-image/testimonial_4.jpg",
+    "heading": "Nice Experience",
+    "review": "Dilocious delivers the best of local flavours at your doorstep. Heavenly for those who live away from their loved places or those who want to relish the best of authentic cuisines from across India. Amazing service !! Keep it up you guys",
+    "location": "Lucknow"
+  },
+  {
+    "id": 5,
+    "name": "Suchi Bijawat",
+    "src": "/testimonial-image/testimonial_5.jpeg",
+    "heading": "Nice Experience",
+    "review": "Dilocious delivers the best of local flavours at your doorstep. Heavenly for those who live away from their loved places or those who want to relish the best of authentic cuisines from across India. Amazing service !! Keep it up you guys",
+    "location": "Lucknow"
+  }
+]
