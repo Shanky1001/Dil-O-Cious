@@ -31,7 +31,7 @@ function App() {
   // state for counting total Value
   const [total, setTotal] = useState(0);
   // State for Modal
-  const [openModal, setOpenModal] = useState({ val: [], open: false })
+  const [openModal, setOpenModal] = useState({ val: [], open: false });
 
   // const [state, dispatch] = useReducer(cartReducer, {
   //   products: sweet,
@@ -50,12 +50,12 @@ function App() {
     if (open.type === 'trash') {
       dispatch(removeFromCart(open.value))
       setOpen({ ...open, open: false });
-      setOpenSnack({ open: true, html: `${open.value.strMeal} removed from cart !` })
+      setOpenSnack({ open: true, html: `${open.value.strMeal} removed from cart !` });
     }
     if (open.type === 'empty') {
       dispatch(clearCart())
       setOpen({ ...open, open: false });
-      setOpenSnack({ open: true, html: ` Your cart is emptied !!` })
+      setOpenSnack({ open: true, html: ` Your cart is emptied !!` });
     }
   }
 

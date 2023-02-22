@@ -1,5 +1,5 @@
 import React from 'react';
-import './Components Styles/Main.css'
+import './Components Styles/Main.css';
 
 const Card = ({ val }) => {
 

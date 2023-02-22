@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import '../Components/Components Styles/Menu.css'
 import { byName, byPrice, clearFilters } from '../redux/Slices/FilterSlice';
 
+
 const Filter = () => {
 
      const filterState = useSelector(state => state.filter);

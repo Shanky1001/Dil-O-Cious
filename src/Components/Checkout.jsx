@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartState } from '../App';
 import './Components Styles/Checkout.css'
 import checkout from '../Assests/checkout.gif'
 import { useDispatch, useSelector } from 'react-redux';
 import { clearCart } from '../redux/Slices/CartSlice';
+
 
 const Checkout = () => {
   const { userName, total } = CartState();

@@ -1,5 +1,6 @@
 import React, { memo } from 'react';
 import topPicks from '../Assests/data/Picks.json'
+
 import TopCard from './Cards Components/topCard';
 
 

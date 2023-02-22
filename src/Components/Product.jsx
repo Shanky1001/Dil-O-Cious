@@ -1,7 +1,7 @@
 
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
-import React from 'react'
+import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
@@ -9,6 +9,7 @@ import { useParams } from 'react-router-dom'
 import { CartState } from '../App'
 import { addToCart, decreaseQTY, increaseQTY, removeFromCart } from '../redux/Slices/CartSlice';
 import './Components Styles/Product.css'
+
 
 const Product = () => {
     const params = useParams();
