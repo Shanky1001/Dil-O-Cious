@@ -1,38 +1,38 @@
 #navContainer {
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    max-height: 5rem;
     background-color: var(--white);
     box-shadow: 0px 22px 47px -32px rgba(55, 65, 176, 1);
+    max-height: 5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
 }
 
 .header {
-    width: 100%;
-    padding: 1rem 2rem;
-    display: flex;
     align-items: center;
+    display: flex;
     justify-content: space-between;
+    padding: 1rem 2rem;
+    width: 100%;
 }
 
 .logo img {
-    width: 200px;
     filter: invert(var(--invert));
+    width: 200px;
 }
 
 .header .navbar {
-    flex: 1;
-    display: flex;
     align-items: center;
+    display: flex;
+    flex: 1;
     justify-content: center;
 }
 
 .header .navbar h1 {
+    color: var(--black);
     cursor: pointer;
     font-size: 3vh;
     font-weight: 600;
     margin: 0 3rem;
-    color: var(--black);
 }
 
 .header .navbar h1:hover {
@@ -40,16 +40,16 @@
 }
 
 .options {
+    align-items: center;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
 }
 
 .options h1 {
+    color: var(--black);
     cursor: pointer;
     font-size: 4.5vh;
     font-weight: 600;
-    color: var(--black);
     margin: 0 1rem;
 }
 
@@ -62,46 +62,46 @@
 }
 
 .overlay {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: var(--white);
-    transition: 1s ease;
-    z-index: 5;
-    display: flex;
     align-items: center;
+    background-color: var(--white);
+    display: flex;
     flex-direction: column;
+    height: 100vh;
     justify-content: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: 1s ease;
+    width: 100%;
+    z-index: 5;
 }
 
 .overlay h1 {
-    cursor: pointer;
     color: var(--black);
-    margin: 1rem 2rem;
+    cursor: pointer;
     font-size: 4.5vh;
+    margin: 1rem 2rem;
 }
 
 .overlay h1:hover {
-    text-decoration: underline !important;
     color: var(--black);
+    text-decoration: underline !important;
 }
 
 .navbarMob .fa-xmark {
-    font-size: 4.5vh;
     color: var(--black);
-    position: absolute;
-    top: 13px;
-    right: 10px;
     cursor: pointer;
+    font-size: 4.5vh;
+    position: absolute;
+    right: 10px;
+    top: 13px;
 }
 
 .navbarMob .fa-bars {
     color: var(--black);
+    cursor: pointer;
     font-size: 4.5vh;
     font-weight: 600;
-    cursor: pointer;
 }
 
 .cart-btn {
@@ -109,18 +109,18 @@
 }
 
 .cart-btn span {
-    position: absolute;
     color: var(--black);
     font-size: 3vh;
-    top: -30%;
-    padding-left: 5%;
     font-weight: 500;
+    padding-left: 5%;
+    position: absolute;
+    top: -30%;
 }
 
 @media screen and (max-width:2000px) {
     .logo img {
-        width: 220px;
         filter: invert(var(--invert));
+        width: 220px;
     }
 }
 
@@ -163,14 +163,14 @@
     }
 
     .overlay {
-        padding-top: 6%;
         justify-content: flex-start;
+        padding-top: 6%;
     }
 
     .overlay h1 {
-        cursor: pointer;
         color: var(--black);
-        margin: 1rem 2rem;
+        cursor: pointer;
         font-size: 3.5vh;
+        margin: 1rem 2rem;
     }
 }

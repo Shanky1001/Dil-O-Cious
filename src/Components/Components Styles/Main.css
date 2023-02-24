@@ -3,66 +3,66 @@
 }
 
 #carouselMain div img {
+    cursor: default;
+    height: 36rem !important;
     position: relative;
     width: 100% !important;
-    height: 36rem !important;
-    cursor: default;
 }
 
 .slick-next:before,
 .slick-prev::before {
-    font-size: 50px;
-    cursor: pointer;
     color: rgb(146, 145, 145);
+    cursor: pointer;
+    font-size: 50px;
 }
 
 .slick-next {
     position: absolute;
-    z-index: 1;
     right: 5rem;
+    z-index: 1;
 }
 
 .slick-prev {
+    left: 3rem;
     position: absolute;
     z-index: 1;
-    left: 3rem;
 }
 
 #testimonials {
-    padding: 4rem 0;
-    color: var(--black);
     background-color: var(--bg);
+    color: var(--black);
+    padding: 4rem 0;
     width: 100%;
 }
 
 #testimonials>h1 {
-    text-align: center;
-    padding-bottom: 3rem;
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: .1rem;
+    padding-bottom: 3rem;
+    text-align: center;
 }
 
 #testimonialSlider {
-    width: 90%;
-    margin: 0 auto;
     border: 1px solid;
     height: 500px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .cardContainer {
-    width: 90%;
-    margin: 1rem auto;
-    height: 440px;
-    padding: 1rem 2rem;
-    color: var(--black);
+    align-items: center;
     background-color: var(--bg);
     border: 1px solid var(--black);
     border-radius: .5rem;
+    box-shadow: 0px 0px 23px -5px rgba(49, 85, 191, 0.84);
+    color: var(--black);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 0px 23px -5px rgba(49, 85, 191, 0.84);
+    height: 440px;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    width: 90%;
 }
 
 .cardContainer h2 {
@@ -74,16 +74,16 @@
 
 .cardContainer p {
     font-size: 1rem;
-    text-align: center;
-    padding: .5rem 0;
     letter-spacing: 0.05rem;
     line-height: 1.5rem;
+    padding: .5rem 0;
+    text-align: center;
 }
 
 .cardContainer img {
-    width: 100px;
-    min-height: 60px;
     border-radius: .5rem;
+    min-height: 60px;
+    width: 100px;
 }
 
 .cardContainer h3 {

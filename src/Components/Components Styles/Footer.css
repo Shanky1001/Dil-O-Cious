@@ -1,29 +1,29 @@
 #footerContainer {
+    align-items: center;
+    background-color: rgb(31, 29, 29);
+    border-top: .1rem solid white;
+    color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
     height: fit-content;
-    background-color: rgb(31, 29, 29);
-    color: white;
-    border-top: .1rem solid white;
+    justify-content: center;
     padding: 2rem 0;
+    width: 100%;
 }
 
 #footerDetails {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 3rem 1.5rem;
+    display: flex;
     gap: 5vh;
+    justify-content: center;
+    margin: auto;
+    padding: 3rem 1.5rem;
+    width: 90%;
 }
 
 #footerDetails .contact {
-    flex: 30%;
     border-right: .1vh solid;
+    flex: 30%;
     padding-right: 5vh;
 }
 
@@ -34,9 +34,9 @@
 
 #footerDetails .contact p {
     font-size: 1.2rem;
-    text-align: start;
-    padding: .5rem 0;
     letter-spacing: .1rem;
+    padding: .5rem 0;
+    text-align: start;
 }
 
 #footerDetails .contact p i {
@@ -45,40 +45,40 @@
 
 #footerDetails .details {
     flex: 70%;
-    text-align: justify;
     font-size: 1.2rem;
-    line-height: 2rem;
     letter-spacing: .1rem;
+    line-height: 2rem;
+    text-align: justify;
 }
 
 #footerContainer #copyright {
-    text-align: center;
-    width: 80%;
-    padding-top: 2rem;
     border-top: .1rem solid white;
     font-size: 1.5rem;
+    padding-top: 2rem;
+    text-align: center;
+    width: 80%;
 }
 
 #help {
-    position: fixed;
-    color: var(--black);
-    top: 36rem;
-    left: 2rem;
-    font-size: 3rem;
-    cursor: pointer;
     border-radius: 10%;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 3rem;
+    left: 2rem;
+    position: fixed;
+    top: 36rem;
     z-index: 10000;
 }
 
 #backToTop {
-    position: fixed;
     bottom: 7rem;
-    right: 5rem;
     color: var(--black);
-    z-index: 10000;
-    font-size: 3rem;
-    width: 15px;
     cursor: pointer;
+    font-size: 3rem;
+    position: fixed;
+    right: 5rem;
+    width: 15px;
+    z-index: 10000;
 }
 
 
@@ -92,11 +92,11 @@
 @media screen and (max-width: 980px) {
 
     #footerDetails {
-        width: 80%;
+        align-items: flex-start;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         justify-content: flex-start;
+        width: 80%;
     }
 
     #footerDetails .contact {

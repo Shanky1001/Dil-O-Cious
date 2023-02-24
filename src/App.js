@@ -33,17 +33,6 @@ function App() {
   // State for Modal
   const [openModal, setOpenModal] = useState({ val: [], open: false });
 
-  // const [state, dispatch] = useReducer(cartReducer, {
-  //   products: sweet,
-  //   cart: []
-  // });
-
-  // const [productState, productDispatch] = useReducer(productReducer, {
-  //   search: "",
-  //   sortPrice: false,
-  //   sortName: false
-  // })
-
   const dispatch = useDispatch();
 
   const confirm = () => {
