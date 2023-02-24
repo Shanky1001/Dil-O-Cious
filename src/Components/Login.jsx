@@ -1,48 +1,54 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { CartState } from '../App';
 import './Components Styles/login.css';
 import userData from '../Assests/data/userData.json'
+import { ButtonBase } from '@mui/material';
 
 const Login = () => {
     const navigate = useNavigate();
     const { setLogged, setOpenSnack, setUserName } = CartState();
+    const [login, setLogin] = useState({ email: "", pass: "" });
 
+    // On Submit function for form
     const log = (e) => {
         e.preventDefault();
-        const emailLog = document.querySelector("#emailLog").value;
-        const passlogin = document.querySelector("#passlogin").value;
-        const uname = document.querySelector("#uname").value;
-        if (emailLog === "" || passlogin === "" || uname === '') {
+
+        if (login.email.toLowerCase() === "" || login.pass.toLowerCase() === "") {
             setOpenSnack({ open: true, html: `Please fill all the fields !!`, severity: "error", time: "1500" })
         } else {
             userData.forEach((val) => {
-                if (val.email === emailLog && val.pass === passlogin && val.uname === uname) {
+                if (val.email.toLowerCase() === login.email.toLowerCase() && val.pass.toLowerCase() === login.pass.toLowerCase()) {
                     setLogged(true);
-                    navigate('/menu');
-                    setUserName(`${uname}`)
-                    setOpenSnack({ open: true, html: `Welcome ${uname} ` })
-                    document.querySelector("#emailLog").value = "";
-                    document.querySelector("#passlogin").value = '';
-                    document.querySelector("#uname").value = '';
+                    setUserName(`${val.uname}`);
+                    const time = setTimeout(() => {
+                        navigate('/menu');
+                        setOpenSnack({ open: true, html: `Welcome ${val.uname}` })
+                    }, 1500);
+                    time();
+                    setLogin({ email: "", pass: "" });
                 } else {
                     setOpenSnack({ open: true, html: `No matching user found! Please try again.`, severity: "error", time: "1500" })
                 }
             })
         }
     }
+    // Handle Change for setting login details
+    const handleChange = (e) => {
+        setLogin({ ...login, [e.target.name]: e.target.value })
+    }
 
     return (
         <div id="registerContainer">
-            <h1 style={{ textAlign: "center", fontSize: "2.5rem", paddingTop: "5vh" }}>Log In</h1>
-            <form id='registerForm'>
+            <h1 style={{ textAlign: "center", fontSize: "2.5rem", paddingTop: "3rem" }}>Log In</h1>
+            <form id='registerForm' onSubmit={log}>
                 <div>
                     <h1>Email-Id</h1>
-                    <input type='email' placeholder='email@abc.com' required autoFocus id='emailLog' />
+                    <input type='email' placeholder='email@abc.com' required autoFocus name='email' id='emailLog' onChange={handleChange} />
                     <h1> Password </h1>
-                    <input type='password' placeholder='password' required id='passlogin' />
+                    <input type='password' placeholder='password' required id='passlogin' name='pass' onChange={handleChange} />
                     <p id="notice"></p>
-                    <button onClick={log}> Login </button>
+                    <button type='submit'> Login </button>
                 </div>
             </form>
         </div>
