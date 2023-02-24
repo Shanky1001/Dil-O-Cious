@@ -5,7 +5,8 @@
 #carouselMain div img {
     position: relative;
     width: 100% !important;
-    height: 30% !important;
+    height: 36rem !important;
+    cursor: default;
 }
 
 .slick-next:before,
@@ -18,13 +19,13 @@
 .slick-next {
     position: absolute;
     z-index: 1;
-    right: 5%;
+    right: 5rem;
 }
 
 .slick-prev {
     position: absolute;
     z-index: 1;
-    left: 3%;
+    left: 3rem;
 }
 
 #testimonials {
@@ -62,7 +63,6 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 0px 23px -5px rgba(49, 85, 191, 0.84);
-    cursor: pointer;
 }
 
 .cardContainer h2 {
@@ -75,7 +75,7 @@
 .cardContainer p {
     font-size: 1rem;
     text-align: center;
-    padding: 1rem 0;
+    padding: .5rem 0;
     letter-spacing: 0.05rem;
     line-height: 1.5rem;
 }
@@ -106,12 +106,5 @@
 
     #testimonialSlider {
         border: none;
-    }
-
-    #carouselMain div img {
-        position: relative;
-        width: 100% !important;
-        cursor: pointer;
-        height: 40vh !important;
     }
 }

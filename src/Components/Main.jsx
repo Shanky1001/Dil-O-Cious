@@ -24,7 +24,7 @@ const Main = () => {
     arrows: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 1500,
     speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -53,7 +53,7 @@ const Main = () => {
   const settings1 = {
     autoplay: true,
     speed: 2000,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 2500,
     arrows: true,
     cssEase: "linear",
     infinite: true,
