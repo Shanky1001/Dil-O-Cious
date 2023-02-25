@@ -4,7 +4,7 @@
 
 #carouselMain div img {
     cursor: default;
-    height: 36rem !important;
+    height: 39rem !important;
     position: relative;
     width: 100% !important;
 }
@@ -94,6 +94,11 @@
 
 
 @media screen and (max-width:650px) {
+
+    .cardContainer {
+        height: 480px;
+    }
+
     #testimonials>h1 {
         font-size: 2rem;
         font-weight: 900;

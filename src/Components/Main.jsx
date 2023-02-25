@@ -69,29 +69,29 @@ const Main = () => {
       <div id="carouselMain">
         <Slider {...settings1}>
           <div >
-            <img src={ghewar} alt="ghewar" width={'100%'} />
+            <img src={ghewar} alt="ghewar" width={'100%'} height={"100%"} />
           </div>
           <div >
-            <img src={hyderabad} alt="hyderabad" width={'100%'} />
+            <img src={hyderabad} alt="hyderabad" width={'100%'} height={"100%"} />
           </div>
           <div >
-            <img src={kolkata} alt="kolkata" width={'100%'} />
+            <img src={kolkata} alt="kolkata" width={'100%'} height={"100%"} />
           </div>
           <div >
-            <img src={mysore_pak} alt="mysore-pak" width={'100%'} />
+            <img src={mysore_pak} alt="mysore-pak" width={'100%'} height={"100%"} />
           </div>
           <div >
-            <img src={ooty} alt="ooty" width={'100%'} />
+            <img src={ooty} alt="ooty" width={'100%'} height={"100%"} />
           </div>
           <div >
-            <img src={rajasthan} alt="rajasthan" width={'100%'} />
+            <img src={rajasthan} alt="rajasthan" width={'100%'} height={"100%"} />
           </div>
         </Slider>
       </div>
       {/* Carousel Container Ends */}
 
       {/* Top Picks  and Category Starts */}
-      <Category />
+      {/* <Category /> */}
       <TopPicks />
       {/* Top Picks and Category Ends  */}
 
