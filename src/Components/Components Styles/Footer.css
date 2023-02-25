@@ -66,12 +66,12 @@
     font-size: 3rem;
     left: 2rem;
     position: fixed;
-    top: 36rem;
+    top: 37rem;
     z-index: 100;
 }
 
 #backToTop {
-    bottom: 7rem;
+    bottom: 5rem;
     color: var(--black);
     cursor: pointer;
     font-size: 3rem;

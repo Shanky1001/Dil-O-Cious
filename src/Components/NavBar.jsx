@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import { CartState } from '../App';
 import '../App.css';
 import '../Components/Components Styles/Nav.css';
+import logo from '../Assests/images/logo.webp';
 
 
 const NavBar = ({ theme, setTheme }) => {
@@ -14,12 +15,12 @@ const NavBar = ({ theme, setTheme }) => {
     const cart = useSelector(state => state.cart.cart);
     // State for navbar toggle
     const [toggle, setToggle] = useState(false);
-
+    // Dark Mode switch function
     const dark = () => {
         theme === "light" ? setTheme("darkTheme") : setTheme("light")
         hideNav()
     }
-
+    // Hide navbar function on mobile screen
     const hideNav = () => {
         setToggle(false);
     }
@@ -29,7 +30,7 @@ const NavBar = ({ theme, setTheme }) => {
             <div className="container">
                 <header className="header">
                     <div className="logo">
-                        <Link to="/"><img src={'https://cdn1.storehippo.com/s/573db1519f0d58741f0cc5c1/ms.settings/5256837ccc4abf1d39000001/webp/589eeda381c872391b08f498-480x480.png'} alt="logo" width={'200px'} /> </Link>
+                        <Link to="/"><img src={logo} alt="logo" width={'200px'} height={"50px"} /> </Link>
                     </div>
                     <nav className='navbar'>
                         <Link to="/"><h1 >Home</h1></Link>
