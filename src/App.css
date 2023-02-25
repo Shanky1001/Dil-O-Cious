@@ -30,6 +30,13 @@
     --invert:100%;
     --bColor:rgb(15, 15, 15);
 }
+
 .wrongPrice{
     text-decoration: line-through !important;
+}
+
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
 }

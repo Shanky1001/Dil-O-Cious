@@ -94,6 +94,11 @@
 
 
 @media screen and (max-width:650px) {
+
+    .cardContainer {
+        height: 480px;
+    }
+
     #testimonials>h1 {
         font-size: 2rem;
         font-weight: 900;
