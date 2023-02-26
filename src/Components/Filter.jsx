@@ -11,22 +11,28 @@ const Filter = () => {
      const dispatch = useDispatch();
 
      return (
-          <div id="filterContainer" style={{ position: "sticky", top: "9rem" }}>
+          <div style={{ position: "sticky", top: "9rem" }}>
                <div>
-                    <h3> Filters    <i className="fa-solid fa-filter"></i> </h3>
+                    <h3> Filters
+                         <i className="fa-solid fa-filter"></i>
+                    </h3>
                     <div id="radioFilter">
-                         <p> Name - </p>
-                         <span><input type='radio' name='group-1' value='ascending-name' onChange={() => {
-                              dispatch(byName("lowToHigh"))
-                         }}
-                              checked={sortName === 'lowToHigh' ? true : false} /> <label> Ascending </label></span>
-                         <span><input type='radio' name='group-1' value='descending-name' onChange={() => {
-                              dispatch(byName("highToLow"))
-                         }}
-                              checked={sortName === 'highToLow' ? true : false} /> <label> Descending </label></span>
+                         <p> By Name - </p>
+                         <span>
+                              <input type='radio' name='group-1' value='ascending-name' onChange={() => {
+                                   dispatch(byName("lowToHigh"))
+                              }}
+                                   checked={sortName === 'lowToHigh' ? true : false} /> <label> Ascending </label>
+                         </span>
+                         <span>
+                              <input type='radio' name='group-1' value='descending-name' onChange={() => {
+                                   dispatch(byName("highToLow"))
+                              }}
+                                   checked={sortName === 'highToLow' ? true : false} /> <label> Descending </label>
+                         </span>
                     </div>
                     <div id="radioFilter">
-                         <p> Price - </p>
+                         <p> By Price - </p>
                          <span>
                               <input type='radio' name='group-2' value='ascending-price' onChange={() => {
                                    dispatch(byPrice("lowToHigh"))

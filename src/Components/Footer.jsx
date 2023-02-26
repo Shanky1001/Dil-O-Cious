@@ -25,28 +25,29 @@ const Footer = () => {
     window.addEventListener('scroll', visibility)
     return (
         <div id="footerContainer">
-            <Tippy interactive={false}
-                content={<p> Help </p>}
-                placement={"right"}
-            >
-                <i className="fa-solid fa-headset" id='help' />
-            </Tippy>
-            <div id='footerDetails'>
-                <div className="contact">
-                    <h1>Contact</h1>
-                    <p><i className="fa-solid fa-square-phone"></i> <span>+91-8840337523</span></p>
-                    <p><i className="fa-solid fa-envelope"></i> <span>sr1071995@gmail.com</span></p>
-                    <p>Live customer care service available Mon-Sat 10 am - 7 pm on non-public holidays</p>
+            <div className="container">
+                <Tippy interactive={false}
+                    content={<p> Help </p>}
+                    placement={"right"}
+                >
+                    <i className="fa-solid fa-headset" id='help' />
+                </Tippy>
+                <div id='footerDetails'>
+                    <div className="contact">
+                        <h1>Contact</h1>
+                        <p><i className="fa-solid fa-square-phone"></i> <span>+91-8840337523</span></p>
+                        <p><i className="fa-solid fa-envelope"></i> <span>sr1071995@gmail.com</span></p>
+                        <p>Live customer care service available Mon-Sat 10 am - 7 pm on non-public holidays</p>
+                    </div>
+                    <div className="details">
+                        Dilocious is your one-stop-shop if you seek and crave for local and regional flavours, unique products and authentically experience different cultures of entire India. At Dilocious, you can get limited available speciality food, a huge variety of tastes and offerings, regional variants of famous food and enjoy far distant seasonal delicacies right your doorstep.
+                    </div>
                 </div>
-                <div className="details">
-                    Dilocious is your one-stop-shop if you seek and crave for local and regional flavours, unique products and authentically experience different cultures of entire India. At Dilocious, you can get limited available speciality food, a huge variety of tastes and offerings, regional variants of famous food and enjoy far distant seasonal delicacies right your doorstep.
-                </div>
+                <div id='copyright'> &copy; Shashank Rai </div>
+                <Tippy content={'Back to top'} placement='left'>
+                    <i className='fa-solid fa-circle-chevron-up' id='backToTop' style={{ display: visible ? 'inline' : 'none' }} onClick={scrollToTop}  ></i>
+                </Tippy>
             </div>
-            <div id='copyright'> &copy; Shashank Rai </div>
-            <Tippy content={'Back to top'} placement='left'>
-                <i className='fa-solid fa-circle-chevron-up' id='backToTop' style={{ display: visible ? 'inline' : 'none' }} onClick={scrollToTop}  ></i>
-            </Tippy>
-
         </div>
     )
 }

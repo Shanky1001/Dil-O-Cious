@@ -58,21 +58,25 @@ const SignIn = () => {
 
 
     return (
-        <div id='registerContainer'>
-            <h1 style={{ textAlign: "center", fontSize: "2.5rem", paddingTop: "5vh" }}>Register</h1>
-            <form id='registerForm'>
-                <div>
-                    <h1>Email-Id</h1>
-                    <input type='email' placeholder='email@abc.com' required autoFocus id='emailSign' />
-                    <h1>User Name </h1>
-                    <input type='text' placeholder='username' required id='signUname' />
-                    <h1> Password </h1>
-                    <input type='password' placeholder='password' required id='signPass' />
-                    <h1> Re-Enter Password </h1>
-                    <input type='text' placeholder='password' required id='resignPass' />
-                    <button onClick={log}> Register</button>
+        <div className="bgImage">
+            <div className="container">
+                <div id='registerContainer'>
+                    <h1>Register</h1>
+                    <form id='registerForm'>
+                        <div>
+                            <h3>Email-Id</h3>
+                            <input type='email' placeholder='email@abc.com' required autoFocus id='emailSign' />
+                            <h3>User Name </h3>
+                            <input type='text' placeholder='username' required id='signUname' />
+                            <h3> Password </h3>
+                            <input type='password' placeholder='password' required id='signPass' />
+                            <h3> Re-Enter Password </h3>
+                            <input type='text' placeholder='password' required id='resignPass' />
+                            <button onClick={log}> Register</button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     )
 }

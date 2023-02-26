@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../../redux/Slices/CartSlice';
 import veg from '../../Assests/images/veg.jpg';
-import nonVeg from '../../Assests/images/non-veg.png'
+import nonVeg from '../../Assests/images/non-veg.png';
 
 const TopCard = ({ val }) => {
 
@@ -16,11 +16,12 @@ const TopCard = ({ val }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  // Add to cart function
   const addToCartCall = (val) => {
     dispatch(addToCart(val))
     setOpenSnack({ open: true, html: `${val.strMeal} is added to cart`, severity: "success", time: "800" })
   }
-
+  // Remove from cart function
   const removeFromCartCall = (val) => {
     dispatch(removeFromCart(val))
     setOpenSnack({ open: true, html: `${val.strMeal} is removed from cart`, severity: "success", time: "800" })

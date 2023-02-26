@@ -8,21 +8,20 @@
     height: fit-content;
     justify-content: center;
     padding: 2rem 0;
-    width: 100%;
 }
 
 #footerDetails {
     align-items: center;
     display: flex;
-    gap: 5vh;
+    gap: 2rem;
     justify-content: center;
-    margin: auto;
+    margin: 0 auto;
     padding: 3rem 1.5rem;
     width: 90%;
 }
 
 #footerDetails .contact {
-    border-right: .1vh solid;
+    border-right: .1rem solid;
     flex: 30%;
     padding-right: 5vh;
 }
@@ -57,6 +56,7 @@
     padding-top: 2rem;
     text-align: center;
     width: 80%;
+    margin: 0 auto;
 }
 
 #help {
@@ -86,11 +86,9 @@
     #footerDetails {
         width: 95%;
     }
-
 }
 
 @media screen and (max-width: 980px) {
-
     #footerDetails {
         align-items: flex-start;
         display: flex;
@@ -100,7 +98,7 @@
     }
 
     #footerDetails .contact {
-        border-bottom: .1vh solid #fff;
+        border-bottom: .1rem solid #fff;
         border-right: none;
     }
 }
