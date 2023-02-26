@@ -38,18 +38,22 @@ const Login = () => {
     }
 
     return (
-        <div id="registerContainer">
-            <h1 style={{ textAlign: "center", fontSize: "2.5rem", paddingTop: "3rem" }}>Log In</h1>
-            <form id='registerForm' onSubmit={log}>
-                <div>
-                    <h1>Email-Id</h1>
-                    <input type='email' placeholder='email@abc.com' required autoFocus name='email' id='emailLog' onChange={handleChange} />
-                    <h1> Password </h1>
-                    <input type='password' placeholder='password' required id='passlogin' name='pass' onChange={handleChange} />
-                    <p id="notice"></p>
-                    <button type='submit'> Login </button>
+        <div className="bgImage">
+            <div className="container">
+                <div id="registerContainer">
+                    <h1>Log In</h1>
+                    <form id='registerForm' onSubmit={log}>
+                        <div>
+                            <h3>Email-Id</h3>
+                            <input type='email' placeholder='email@abc.com' required autoFocus name='email' id='emailLog' onChange={handleChange} />
+                            <h3> Password </h3>
+                            <input type='password' placeholder='password' required id='passlogin' name='pass' onChange={handleChange} />
+                            <p id="notice"></p>
+                            <button type='submit'> Login </button>
+                        </div>
+                    </form>
                 </div>
-            </form>
+            </div>
         </div>
     )
 }

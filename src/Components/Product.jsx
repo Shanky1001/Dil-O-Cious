@@ -20,13 +20,21 @@ const Product = () => {
     const dispatch = useDispatch();
 
     let quan = 0;
+
     const [val, setVal] = useState();
+
     useEffect(() => {
         state.products.forEach((val) => {
             if (val.idMeal === id)
                 setVal(val)
         })
-    })
+    }, [id, state.products])
+
+    useEffect(() => {
+        window.scrollTo({
+            top: 0, behavior: "smooth"
+        })
+    }, [])
 
     return (
         <>
