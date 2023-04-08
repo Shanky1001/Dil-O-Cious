@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CartState } from '../App';
-import './Components Styles/login.css';
-import userData from '../Assests/data/userData.json'
+import { CartState } from '../../App';
+import './login.css';
+import userData from '../../Assests/data/userData.json';
 
 const Login = () => {
     const navigate = useNavigate();

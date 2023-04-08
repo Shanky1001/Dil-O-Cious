@@ -1,13 +1,16 @@
 import { createContext, useContext, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import AboutPage from "./Components/AboutPage";
-import Cart from "./Components/Cart";
-import Checkout from "./Components/Checkout";
-import Footer from "./Components/Footer";
-import Main from "./Components/Main";
-import Menu from "./Components/Menu";
-import NavBar from "./Components/NavBar";
+import AboutPage from "./Pages/about-page/AboutPage";
+import Cart from "./Components/cart/Cart";
+import Checkout from "./Components/checkout/Checkout";
+import Footer from "./Components/footer/Footer";
+import Main from "./Pages/main/Main";
+import Menu from "./Components/menu/Menu";
+import NavBar from "./Components/navbar/NavBar";
+import Login from "./Pages/auth/Login";
+import SignIn from "./Pages/auth/SignIn";
+import Product from "./Pages/product/Product";
 
 import {
   Alert,
@@ -17,14 +20,12 @@ import {
   DialogTitle,
   Snackbar,
 } from "@mui/material";
-import Login from "./Components/Login";
-import SignIn from "./Components/SignIn";
-import Product from "./Components/Product";
 
 import { clearCart, removeFromCart } from "./redux/Slices/CartSlice";
 import { useDispatch } from "react-redux";
 
 const user = createContext();
+
 function App() {
   // Dialog Box state
   const [open, setOpen] = useState({

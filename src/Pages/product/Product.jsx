@@ -6,9 +6,9 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom'
-import { CartState } from '../App'
-import { addToCart, decreaseQTY, increaseQTY, removeFromCart } from '../redux/Slices/CartSlice';
-import './Components Styles/Product.css'
+import { CartState } from '../../App';
+import { addToCart, decreaseQTY, increaseQTY, removeFromCart } from '../../redux/Slices/CartSlice';
+import '../product/Product.css';
 
 
 const Product = () => {

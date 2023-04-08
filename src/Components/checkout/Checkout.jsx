@@ -1,10 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { CartState } from '../App';
-import './Components Styles/Checkout.css';
-import checkout from '../Assests/checkout.gif';
+import { CartState } from '../../App';
+import './Checkout.css';
+import checkout from '../../Assests/checkout.gif';
 import { useDispatch, useSelector } from 'react-redux';
-import { clearCart } from '../redux/Slices/CartSlice';
+import { clearCart } from '../../redux/Slices/CartSlice';
 
 
 const Checkout = () => {
