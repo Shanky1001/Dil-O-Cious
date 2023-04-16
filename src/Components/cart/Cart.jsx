@@ -2,10 +2,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import '../Components/Components Styles/Cart.css';
+import './Cart.css';
 
-import CartCard from './Cards Components/CartCard';
-import empty from '../Assests/images/empty-cart.png';
+import CartCard from '../cards/CartCard';
+import empty from '../../Assests/images/empty-cart.png';
 
 const Cart = () => {
   const cart = useSelector(state => state.cart.cart);

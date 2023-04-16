@@ -29,7 +29,7 @@ const TopCard = ({ val }) => {
 
   return (
     <div className="topCardContainer" id={val.idMeal}>
-      <img src={val.strMealThumb} alt={val.strMeal} width={"200px"} height={"200px"} />
+      <img src={val.strMealThumb} alt={val.strMeal} width={200} height={200} />
       <div className='details_wrapper'>
         <h2>{val.strMeal}</h2>
         <div className='details'>

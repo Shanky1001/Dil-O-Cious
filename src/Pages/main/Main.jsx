@@ -1,19 +1,18 @@
 import React from 'react';
-import '../App.css';
-import '../Components/Components Styles/Main.css';
+import '../../App.css';
+import '../main/Main.css';
 import Slider from "react-slick";
-import testimonial from '../Assests/data/Testimonials.json';
-import Card from './Card';
-import About from './About';
-import TopPicks from './TopPicks';
-import Category from './Category';
+import testimonial from '../../Assests/data/Testimonials.json';
+import Card from '../../Components/Card';
+import About from '../../Components/about/About';
+import TopPicks from '../../Components/TopPicks';
 // Images
-import ghewar from '../Assests/images/ghewar.webp';
-import hyderabad from '../Assests/images/hyderabad.webp';
-import kolkata from '../Assests/images/kolkata.webp';
-import mysore_pak from '../Assests/images/mysore_pak.webp';
-import ooty from '../Assests/images/ooty.webp';
-import rajasthan from '../Assests/images/rajasthan.webp';
+import ghewar from '../../Assests/images/ghewar.webp';
+import hyderabad from '../../Assests/images/hyderabad.webp';
+import kolkata from '../../Assests/images/kolkata.webp';
+import mysore_pak from '../../Assests/images/mysore_pak.webp';
+import ooty from '../../Assests/images/ooty.webp';
+import rajasthan from '../../Assests/images/rajasthan.webp';
 
 
 const Main = () => {

@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import TopCard from './Cards Components/topCard';
-import './Components Styles/Menu.css';
-import Filter from './Filter';
-import { searchByName } from '../redux/Slices/FilterSlice';
+import TopCard from '../cards/topCard';
+import './Menu.css';
+import Filter from '../Filter';
+import { searchByName } from '../../redux/Slices/FilterSlice';
 
 const Menu = () => {
 
@@ -39,6 +39,12 @@ const Menu = () => {
 
     return sortedProducts
   }
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0, behavior: "smooth"
+    })
+  }, [])
 
   return (
     <div className="container">

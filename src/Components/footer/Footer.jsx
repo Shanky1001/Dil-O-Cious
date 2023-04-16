@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import '../Components/Components Styles/Footer.css';
-import '../App.css';
+import './Footer.css';
+import '../../App.css';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 

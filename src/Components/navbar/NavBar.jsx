@@ -1,12 +1,11 @@
 import Tippy from '@tippyjs/react';
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
-
 import { Link } from 'react-router-dom';
-import { CartState } from '../App';
-import '../App.css';
-import '../Components/Components Styles/Nav.css';
-import logo from '../Assests/images/logo.webp';
+import { CartState } from '../../App';
+import '../../App.css';
+import './Nav.css';
+import logo from '../../Assests/images/logo.webp';
 
 
 const NavBar = ({ theme, setTheme }) => {

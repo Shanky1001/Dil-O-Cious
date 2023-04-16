@@ -1,7 +1,7 @@
 import React, { memo } from 'react';
 import topPicks from '../Assests/data/Picks.json'
 
-import TopCard from './Cards Components/topCard';
+import TopCard from './cards/topCard';
 
 
 const TopPicks = () => {

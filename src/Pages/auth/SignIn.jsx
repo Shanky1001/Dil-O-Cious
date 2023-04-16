@@ -1,8 +1,8 @@
 import React from 'react';
-import './Components Styles/login.css';
+import './login.css';
 import { useNavigate } from 'react-router-dom';
-import { CartState } from '../App';
-import data from '../Assests/data/userData.json'
+import { CartState } from '../../App';
+import data from '../../Assests/data/userData.json';
 
 const SignIn = () => {
     const navigate = useNavigate();

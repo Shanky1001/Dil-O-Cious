@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import '../Components/Components Styles/Menu.css';
+import './menu/Menu.css';
 import { byName, byPrice, clearFilters } from '../redux/Slices/FilterSlice';
 
 
