@@ -2,6 +2,7 @@
   "name": "sweetshop",
   "version": "0.1.2",
   "private": true,
+  "homepage": "https://shanky1001.github.io/React-Sweet-Shop/",
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
