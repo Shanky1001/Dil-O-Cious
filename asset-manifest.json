@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/React-Sweet-Shop/static/css/main.1980e45d.css",
-    "main.js": "/React-Sweet-Shop/static/js/main.b53c9dc8.js",
-    "static/media/bg.jpg": "/React-Sweet-Shop/static/media/bg.5a0bb108a46e149d1714.jpg",
-    "static/media/checkout.gif": "/React-Sweet-Shop/static/media/checkout.9e4de295354c7f1029c1.gif",
-    "static/media/mysore_pak.webp": "/React-Sweet-Shop/static/media/mysore_pak.c4e637717582c8c6db1a.webp",
-    "static/media/ghewar.webp": "/React-Sweet-Shop/static/media/ghewar.ed5d07a25ad0582a28eb.webp",
-    "static/media/ooty.webp": "/React-Sweet-Shop/static/media/ooty.1c33043a2fec34344d46.webp",
-    "static/media/kolkata.webp": "/React-Sweet-Shop/static/media/kolkata.72730c2a7d2bb8c306fd.webp",
-    "static/media/rajasthan.webp": "/React-Sweet-Shop/static/media/rajasthan.8b17d540da943cb18807.webp",
-    "static/media/hyderabad.webp": "/React-Sweet-Shop/static/media/hyderabad.4ede5120118cd839f717.webp",
-    "static/media/non-veg.png": "/React-Sweet-Shop/static/media/non-veg.ef8567baab884828a9ea.png",
-    "static/media/empty-cart.png": "/React-Sweet-Shop/static/media/empty-cart.3fb2f85a27ef1e5245ad.png",
-    "static/media/logo.webp": "/React-Sweet-Shop/static/media/logo.7b0c27b779839070527a.webp",
-    "index.html": "/React-Sweet-Shop/index.html",
-    "main.1980e45d.css.map": "/React-Sweet-Shop/static/css/main.1980e45d.css.map",
-    "main.b53c9dc8.js.map": "/React-Sweet-Shop/static/js/main.b53c9dc8.js.map"
+    "main.css": "/static/css/main.4b9237b4.css",
+    "main.js": "/static/js/main.7d9f8d5a.js",
+    "static/media/bg.jpg": "/static/media/bg.5a0bb108a46e149d1714.jpg",
+    "static/media/checkout.gif": "/static/media/checkout.9e4de295354c7f1029c1.gif",
+    "static/media/mysore_pak.webp": "/static/media/mysore_pak.c4e637717582c8c6db1a.webp",
+    "static/media/ghewar.webp": "/static/media/ghewar.ed5d07a25ad0582a28eb.webp",
+    "static/media/ooty.webp": "/static/media/ooty.1c33043a2fec34344d46.webp",
+    "static/media/kolkata.webp": "/static/media/kolkata.72730c2a7d2bb8c306fd.webp",
+    "static/media/rajasthan.webp": "/static/media/rajasthan.8b17d540da943cb18807.webp",
+    "static/media/hyderabad.webp": "/static/media/hyderabad.4ede5120118cd839f717.webp",
+    "static/media/non-veg.png": "/static/media/non-veg.ef8567baab884828a9ea.png",
+    "static/media/empty-cart.png": "/static/media/empty-cart.3fb2f85a27ef1e5245ad.png",
+    "static/media/logo.webp": "/static/media/logo.7b0c27b779839070527a.webp",
+    "index.html": "/index.html",
+    "main.4b9237b4.css.map": "/static/css/main.4b9237b4.css.map",
+    "main.7d9f8d5a.js.map": "/static/js/main.7d9f8d5a.js.map"
   },
   "entrypoints": [
-    "static/css/main.1980e45d.css",
-    "static/js/main.b53c9dc8.js"
+    "static/css/main.4b9237b4.css",
+    "static/js/main.7d9f8d5a.js"
   ]
 }
